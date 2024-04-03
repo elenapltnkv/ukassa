@@ -15,9 +15,9 @@ jobs:
         with:
           distribution: 'zulu'
           java-version: '17'
-      - uses: Xotabu4/selenoid-github-action@v2
+
       # запускаем тесты
-      - run: ./gradlew clean d_test
+      - run: gradle clean positive
       # скачиваем историю тестов
       - uses: actions/checkout@v2
         if: always()
