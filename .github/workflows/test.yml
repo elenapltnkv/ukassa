@@ -27,12 +27,12 @@ jobs:
       # запускаем тесты
       - run: gradle clean positive
       # скачиваем историю тестов
-      - uses: actions/checkout@v2
-        if: always()
-        continue-on-error: true
-        with:
-          ref: gh-pages
-          path: gh-pages
+        # - uses: actions/checkout@v2
+        # if: always()
+        # continue-on-error: true
+          # with:
+          # ref: gh-pages
+        # path: gh-pages
       # генерируем отчет
       - uses: simple-elf/allure-report-action@master
         if: always()
