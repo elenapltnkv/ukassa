@@ -27,14 +27,14 @@ jobs:
       # запускаем тесты
       - run: gradle clean positive
       # скачиваем историю тестов
-        # - uses: actions/checkout@v2
-        # if: always()
-        # continue-on-error: true
-          # with:
-          # ref: gh-pages
-        # path: gh-pages
+      - uses: actions/checkout@v3
+        if: always()
+        continue-on-error: true
+        with:
+           ref: gh-pages
+           path: gh-pages
       # генерируем отчет
-      - uses: simple-elf/allure-report-action@master
+      - uses: simple-elf/allure-report-action@v1.7
         if: always()
         with:
           gh_pages: gh-pages
@@ -42,7 +42,7 @@ jobs:
           allure_report: allure-report
           allure_history: allure-history
       # публикуем отчет
-      - uses: peaceiris/actions-gh-pages@v2
+      - uses: peaceiris/actions-gh-pages@v3
         if: always()
         env:
           PERSONAL_TOKEN: ${{ secrets.SAMIGULLAEVA_ELENA }}
