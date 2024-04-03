@@ -43,6 +43,6 @@ jobs:
       - uses: peaceiris/actions-gh-pages@v2
         if: always()
         env:
-          PERSONAL_TOKEN: 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
+          PERSONAL_TOKEN: ${{ secrets.SAMIGULLAEVA_ELENA }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
