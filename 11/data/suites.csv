@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Apr 03 14:53:45 GMT 2024","Wed Apr 03 14:53:50 GMT 2024","5844","","ukassa.test.positive.PayoutCardPostPositiveTest","","ukassa.test.positive.PayoutCardPostPositiveTest","payoutCheckAmountTest","Проверка отображения правильной суммы в ответе",""
+"passed","Wed Apr 03 14:53:53 GMT 2024","Wed Apr 03 14:53:54 GMT 2024","1012","","ukassa.test.positive.PayoutCardPostPositiveTest","","ukassa.test.positive.PayoutCardPostPositiveTest","payoutCheckCardTypeTest","Проверка card_type в ответе",""
+"passed","Wed Apr 03 14:53:51 GMT 2024","Wed Apr 03 14:53:53 GMT 2024","1980","","ukassa.test.positive.PayoutCardPostPositiveTest","","ukassa.test.positive.PayoutCardPostPositiveTest","payoutCheckStatusTest","Проверка статуса 'waiting_for_capture'",""
