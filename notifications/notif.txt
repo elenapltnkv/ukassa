@@ -1,0 +1,14 @@
+https://gist.github.com/dideler/85de4d64f66c1966788c1b2304b9caf1
+
+TelegramUserName: @SamElenaTestFirstBot
+TelegramToken: 6928896968:AAFoUMHXoIFANndRYd5vQcxGtGNZTJRU3aw
+ChatID: -1002128870098
+
+curl -s https://api.telegram.org/bot6928896968:AAFoUMHXoIFANndRYd5vQcxGtGNZTJRU3aw/getUpdates
+curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "-1002128870098","text": "This is a test from curl", "disable_notification": true}' https://api.telegram.org/bot6928896968:AAFoUMHXoIFANndRYd5vQcxGtGNZTJRU3aw
+java "-DconfigFile=notifications/config.json" -jar /home/user/IdeaProjects/wb/notifications/allure-notifications-4.6.1.jar
+java "-DconfigFile=notifications/config.json" -jar notifications/allure-notifications-4.2.1.jar
+java -jar notifications/allure-notifications-4.2.1.jar -DconfigFile=notifications/config.json
+java -jar "-DconfigFile=notifications/config.json" notifications/allure-notifications-4.2.1.jar
+
+1d294ea4-fde2-4c81-b6d4-23f2e1da949a-result.json

@@ -1,0 +1,18 @@
+{
+  "base": {
+    "logo": "",
+    "project": "ukassa",
+    "environment": "ukassa",
+    "comment": "report from project",
+    "reportLink": "http://45.9.40.101:8888/job/wb",
+    "language": "ru",
+    "allureFolder": "build/reports/allure-report/allureReport/",
+    "enableChart": true
+  },
+  "telegram": {
+    "token": "6928896968:AAFoUMHXoIFANndRYd5vQcxGtGNZTJRU3aw",
+    "chat": "-1002128870098",
+    "replyTo": ""
+  }
+
+}
