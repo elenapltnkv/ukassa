@@ -1,0 +1,1 @@
+{"uuid":"65ab443e-9d00-4c06-afc1-1720dab5cd49","name":"Проверка card_type в ответе","children":["dbc80071-acbe-4b20-824a-8ff9c6a6a9ca"],"befores":[],"afters":[{"name":"afteEach","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1712149053981,"stop":1712149053981}],"start":1712149053188,"stop":1712149053984}

@@ -1,44 +1,0 @@
-1Request URI:	https://api.yookassa.ru/v3/payments
-?Headers:		Idempotence-Key=d3848c23-c5b5-4434-b2e1-3cfdaccd5d39
-e				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
-				Accept=*/*
-"				Content-Type=application/json
-Body:
-{
-    "amount": {
-        "value": "150.00",
-        "currency": "RUB"
-    },
-    "payment_method_data": {
-        "type": "bank_card",
-        "card": {
-+            "cardholder": "MR CARDHOLDER",
-            "csc": "213",
-"            "expiry_month": "01",
-#            "expiry_year": "2020",
-            "number": "32558"
-
-        }
-    },
-    "confirmation": {
-        "type": "redirect",
-;        "return_url": "https://www.example.com/return_url"
-    },
-&    "description": "Заказ №74"
-}
-HTTP/1.1 400 
-Server: nginx
-$Date: Wed, 03 Apr 2024 08:15:04 GMT
--Content-Type: application/json;charset=UTF-8
-Content-Length: 282
-Connection: keep-alive
-Keep-Alive: timeout=12
-�Signature: v1 2d9f23c8 1 MGQCMFqso1ImkBzziVnyeKWusMUG8S42vOkcJkazvtN5FKc/q1Jxm3u4YZmFsfWUBZ0sTAIwJvUOmdj2wlN4iaxC9oke0TPTaX92tCP1wfYSMWZQ2ufPfeBrrRMEfDIelDl8ajvE
-
-{
-    "type": "error",
-2    "id": "f6e0abb6-9c95-4059-93a1-383fd724cdcd",
-    "code": "invalid_request",
-�    "description": "Error in the bank card number. Specify a valid number. You can validate the number using the Luhn algorithm.",
-3    "parameter": "payment_method_data.card.number"
-}

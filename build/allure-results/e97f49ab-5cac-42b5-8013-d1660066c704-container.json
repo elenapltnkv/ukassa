@@ -1,0 +1,1 @@
+{"uuid":"e97f49ab-5cac-42b5-8013-d1660066c704","name":"Проверка отображения правильной суммы в ответе","children":["2e90a2db-f77e-46ac-8fb5-3e30fe7bdf78"],"befores":[],"afters":[{"name":"afteEach","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1712149051332,"stop":1712149051333}],"start":1712149045571,"stop":1712149051479}

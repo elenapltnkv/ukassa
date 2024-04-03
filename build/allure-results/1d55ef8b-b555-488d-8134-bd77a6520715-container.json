@@ -1,0 +1,1 @@
+{"uuid":"1d55ef8b-b555-488d-8134-bd77a6520715","name":"Проверка статуса 'waiting_for_capture'","children":["f8075849-6cb6-401e-a47e-9e6e64aa0adc"],"befores":[],"afters":[{"name":"afteEach","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1712149053184,"stop":1712149053184}],"start":1712149051495,"stop":1712149053187}
