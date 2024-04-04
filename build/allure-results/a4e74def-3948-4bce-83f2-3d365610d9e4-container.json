@@ -1,0 +1,1 @@
+{"uuid":"a4e74def-3948-4bce-83f2-3d365610d9e4","name":"Проверка получения валидных данных","children":["03b3a582-d7b2-46c7-aa95-2ab8223a5822"],"befores":[{"name":"beforeEach","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1712244696464,"stop":1712244696464}],"afters":[],"start":1712244696458,"stop":1712244697578}

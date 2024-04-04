@@ -1,0 +1,1 @@
+{"uuid":"ff2c2ec6-c871-4acc-b455-fc8a61e17d3c","name":"Проверка ввода невалидного года Expiry_year","children":["d761faa2-17fb-4f64-9d7e-9c7322cddb41"],"befores":[{"name":"beforeEach","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1712244696046,"stop":1712244696046}],"afters":[],"start":1712244696043,"stop":1712244696431}

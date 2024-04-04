@@ -1,0 +1,1 @@
+{"uuid":"07e58c85-b7dc-4387-8c26-556fad6c8b09","name":"Проверка текста ошибки при отправке невалидного номера карты","children":["82a6ea37-bf09-4384-9f61-8c056581990e"],"befores":[{"name":"beforeEach","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1712244690248,"stop":1712244690248}],"afters":[],"start":1712244690242,"stop":1712244691358}

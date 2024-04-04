@@ -1,1 +1,0 @@
-{"uuid":"53255520-a628-497a-833d-54f1406b3eff","name":"Проверка невалидного номера карты","children":["c7347f41-ac3d-4f03-9efa-5cfddb51ad20"],"befores":[{"name":"beforeEach","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1712244219188,"stop":1712244219188}],"afters":[],"start":1712244219185,"stop":1712244221608}

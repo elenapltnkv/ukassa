@@ -1,0 +1,1 @@
+{"uuid":"081743ac-7735-4c36-8306-149e093a53d3","name":"Проверка успешного подтверждения платежаб статус код 200","children":["a775d1b6-2a3a-4636-a85e-cd0c2dd506e5"],"befores":[{"name":"beforeEach","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1712244701666,"stop":1712244701666}],"afters":[],"start":1712244701664,"stop":1712244701879}

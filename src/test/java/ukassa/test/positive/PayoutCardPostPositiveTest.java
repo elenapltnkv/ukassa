@@ -50,7 +50,7 @@ public class PayoutCardPostPositiveTest extends Base {
         dataModel.setDescription("Заказ №74");
 
 
-        given(spec)
+        given(spec8)
                 .body(dataModel)
                 .when()
                 .post()

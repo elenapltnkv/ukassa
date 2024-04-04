@@ -1,1 +1,0 @@
-{"uuid":"4dbfcebb-83d6-4e70-aac8-528e691c3908","name":"Проверка срока действия карты","children":["294b65a2-33f9-4d87-9a4b-852423b2bbe8"],"befores":[{"name":"beforeEach","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1712244221612,"stop":1712244221613}],"afters":[],"start":1712244221610,"stop":1712244224778}

@@ -98,6 +98,15 @@ public class Specifications extends Base {
             .contentType("application/json")
             .filter(new AllureRestAssured())
             .header("Authorization", "Basic " + encodedString);
+    public static RequestSpecification spec8 = with()
+            .log().uri()
+            .log().headers()
+            .log().body()
+            .baseUri("https://api.yookassa.ru/v3/payments")
+            .header("Idempotence-Key", UUID.randomUUID())
+            .contentType("application/json")
+            .filter(new AllureRestAssured())
+            .header("Authorization", "Basic " + encodedString);
     public static final ResponseSpecification resPect = new ResponseSpecBuilder()
 
             .log(URI)

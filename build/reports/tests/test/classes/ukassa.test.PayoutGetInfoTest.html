@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">3.693s</div>
+<div class="counter">3.882s</div>
 <p>duration</p>
 </div>
 </td>
@@ -81,13 +81,13 @@
 <tr>
 <td class="success">Проверка запроса информации по всем платежам</td>
 <td class="success">PayoutGetAllInfoTest()</td>
-<td class="success">3.355s</td>
+<td class="success">3.470s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Проверка запроса информации по определенному платежу</td>
 <td class="success">PayoutGetInfoIdTest()</td>
-<td class="success">0.338s</td>
+<td class="success">0.412s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -96,24 +96,161 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>Request URI:	https://api.yookassa.ru/v3/payments
-Headers:		Idempotence-Key=84e01c0f-b8ba-456a-a678-6af873038dc1
+Headers:		Idempotence-Key=a3739194-84cd-4b76-96d1-2ba48a9e2146
 				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
 				Accept=*/*
 				Content-Type=application/json
 Body:			&lt;none&gt;
 HTTP/1.1 200 
 Server: nginx
-Date: Thu, 04 Apr 2024 15:23:37 GMT
+Date: Thu, 04 Apr 2024 15:31:29 GMT
 Content-Type: application/json
 Connection: close
 Strict-Transport-Security: max-age=15768000
 
 {
     &quot;type&quot;: &quot;list&quot;,
-    &quot;next_cursor&quot;: &quot;2da087da-000f-5000-a000-175fc3bf6194&quot;,
+    &quot;next_cursor&quot;: &quot;2da0da50-000f-5000-9000-1d763a71233c&quot;,
     &quot;items&quot;: [
         {
-            &quot;id&quot;: &quot;2da0d93f-000f-5000-9000-1107b283d29f&quot;,
+            &quot;id&quot;: &quot;2da0db15-000f-5000-a000-1f1b98a4f918&quot;,
+            &quot;status&quot;: &quot;waiting_for_capture&quot;,
+            &quot;amount&quot;: {
+                &quot;value&quot;: &quot;150.00&quot;,
+                &quot;currency&quot;: &quot;RUB&quot;
+            },
+            &quot;description&quot;: &quot;Заказ №74&quot;,
+            &quot;recipient&quot;: {
+                &quot;account_id&quot;: &quot;359240&quot;,
+                &quot;gateway_id&quot;: &quot;2215148&quot;
+            },
+            &quot;payment_method&quot;: {
+                &quot;type&quot;: &quot;bank_card&quot;,
+                &quot;id&quot;: &quot;2da0db15-000f-5000-a000-1f1b98a4f918&quot;,
+                &quot;saved&quot;: false,
+                &quot;title&quot;: &quot;Bank card *4444&quot;,
+                &quot;card&quot;: {
+                    &quot;first6&quot;: &quot;555555&quot;,
+                    &quot;last4&quot;: &quot;4444&quot;,
+                    &quot;expiry_year&quot;: &quot;2020&quot;,
+                    &quot;expiry_month&quot;: &quot;01&quot;,
+                    &quot;card_type&quot;: &quot;MasterCard&quot;,
+                    &quot;card_product&quot;: {
+                        &quot;code&quot;: &quot;E&quot;
+                    },
+                    &quot;issuer_country&quot;: &quot;US&quot;
+                }
+            },
+            &quot;created_at&quot;: &quot;2024-04-04T15:29:25.099Z&quot;,
+            &quot;expires_at&quot;: &quot;2024-04-11T15:29:25.589Z&quot;,
+            &quot;test&quot;: true,
+            &quot;paid&quot;: true,
+            &quot;refundable&quot;: false,
+            &quot;metadata&quot;: {
+                
+            },
+            &quot;authorization_details&quot;: {
+                &quot;rrn&quot;: &quot;227088987595086&quot;,
+                &quot;auth_code&quot;: &quot;316206&quot;,
+                &quot;three_d_secure&quot;: {
+                    &quot;applied&quot;: false,
+                    &quot;method_completed&quot;: false,
+                    &quot;challenge_completed&quot;: false
+                }
+            }
+        },
+        {
+            &quot;id&quot;: &quot;2da0db14-000f-5000-9000-15d8455586bb&quot;,
+            &quot;status&quot;: &quot;waiting_for_capture&quot;,
+            &quot;amount&quot;: {
+                &quot;value&quot;: &quot;150.00&quot;,
+                &quot;currency&quot;: &quot;RUB&quot;
+            },
+            &quot;description&quot;: &quot;Заказ №74&quot;,
+            &quot;recipient&quot;: {
+                &quot;account_id&quot;: &quot;359240&quot;,
+                &quot;gateway_id&quot;: &quot;2215148&quot;
+            },
+            &quot;payment_method&quot;: {
+                &quot;type&quot;: &quot;bank_card&quot;,
+                &quot;id&quot;: &quot;2da0db14-000f-5000-9000-15d8455586bb&quot;,
+                &quot;saved&quot;: false,
+                &quot;title&quot;: &quot;Bank card *4444&quot;,
+                &quot;card&quot;: {
+                    &quot;first6&quot;: &quot;555555&quot;,
+                    &quot;last4&quot;: &quot;4444&quot;,
+                    &quot;expiry_year&quot;: &quot;2020&quot;,
+                    &quot;expiry_month&quot;: &quot;01&quot;,
+                    &quot;card_type&quot;: &quot;MasterCard&quot;,
+                    &quot;card_product&quot;: {
+                        &quot;code&quot;: &quot;E&quot;
+                    },
+                    &quot;issuer_country&quot;: &quot;US&quot;
+                }
+            },
+            &quot;created_at&quot;: &quot;2024-04-04T15:29:24.190Z&quot;,
+            &quot;expires_at&quot;: &quot;2024-04-11T15:29:24.673Z&quot;,
+            &quot;test&quot;: true,
+            &quot;paid&quot;: true,
+            &quot;refundable&quot;: false,
+            &quot;metadata&quot;: {
+                
+            },
+            &quot;authorization_details&quot;: {
+                &quot;rrn&quot;: &quot;770501742552073&quot;,
+                &quot;auth_code&quot;: &quot;375849&quot;,
+                &quot;three_d_secure&quot;: {
+                    &quot;applied&quot;: false,
+                    &quot;method_completed&quot;: false,
+                    &quot;challenge_completed&quot;: false
+                }
+            }
+        },
+        {
+            &quot;id&quot;: &quot;2da0db12-000f-5000-9000-1280d0d88c42&quot;,
+            &quot;status&quot;: &quot;waiting_for_capture&quot;,
+            &quot;amount&quot;: {
+                &quot;value&quot;: &quot;150.00&quot;,
+                &quot;currency&quot;: &quot;RUB&quot;
+            },
+            &quot;description&quot;: &quot;Заказ №74&quot;,
+            &quot;recipient&quot;: {
+                &quot;account_id&quot;: &quot;359240&quot;,
+                &quot;gateway_id&quot;: &quot;2215148&quot;
+            },
+            &quot;payment_method&quot;: {
+                &quot;type&quot;: &quot;bank_card&quot;,
+                &quot;id&quot;: &quot;2da0db12-000f-5000-9000-1280d0d88c42&quot;,
+                &quot;saved&quot;: false,
+                &quot;title&quot;: &quot;Bank card *2987&quot;,
+                &quot;card&quot;: {
+                    &quot;first6&quot;: &quot;220247&quot;,
+                    &quot;last4&quot;: &quot;2987&quot;,
+                    &quot;expiry_year&quot;: &quot;2020&quot;,
+                    &quot;expiry_month&quot;: &quot;01&quot;,
+                    &quot;card_type&quot;: &quot;Unknown&quot;
+                }
+            },
+            &quot;created_at&quot;: &quot;2024-04-04T15:29:22.956Z&quot;,
+            &quot;expires_at&quot;: &quot;2024-04-11T15:29:23.516Z&quot;,
+            &quot;test&quot;: true,
+            &quot;paid&quot;: true,
+            &quot;refundable&quot;: false,
+            &quot;metadata&quot;: {
+                
+            },
+            &quot;authorization_details&quot;: {
+                &quot;rrn&quot;: &quot;298321662018960&quot;,
+                &quot;auth_code&quot;: &quot;299926&quot;,
+                &quot;three_d_secure&quot;: {
+                    &quot;applied&quot;: false,
+                    &quot;method_completed&quot;: false,
+                    &quot;challenge_completed&quot;: false
+                }
+            }
+        },
+        {
+            &quot;id&quot;: &quot;2da0db0d-000f-5000-9000-1443fbd19c6c&quot;,
             &quot;status&quot;: &quot;canceled&quot;,
             &quot;amount&quot;: {
                 &quot;value&quot;: &quot;150.00&quot;,
@@ -126,7 +263,7 @@ Strict-Transport-Security: max-age=15768000
             },
             &quot;payment_method&quot;: {
                 &quot;type&quot;: &quot;bank_card&quot;,
-                &quot;id&quot;: &quot;2da0d93f-000f-5000-9000-1107b283d29f&quot;,
+                &quot;id&quot;: &quot;2da0db0d-000f-5000-9000-1443fbd19c6c&quot;,
                 &quot;saved&quot;: false,
                 &quot;title&quot;: &quot;Bank card *4543&quot;,
                 &quot;card&quot;: {
@@ -141,7 +278,7 @@ Strict-Transport-Security: max-age=15768000
                     &quot;issuer_country&quot;: &quot;US&quot;
                 }
             },
-            &quot;created_at&quot;: &quot;2024-04-04T15:21:35.252Z&quot;,
+            &quot;created_at&quot;: &quot;2024-04-04T15:29:17.971Z&quot;,
             &quot;test&quot;: true,
             &quot;paid&quot;: false,
             &quot;refundable&quot;: false,
@@ -153,8 +290,8 @@ Strict-Transport-Security: max-age=15768000
                 &quot;reason&quot;: &quot;card_expired&quot;
             },
             &quot;authorization_details&quot;: {
-                &quot;rrn&quot;: &quot;764690069163811&quot;,
-                &quot;auth_code&quot;: &quot;545805&quot;,
+                &quot;rrn&quot;: &quot;708272579777560&quot;,
+                &quot;auth_code&quot;: &quot;503734&quot;,
                 &quot;three_d_secure&quot;: {
                     &quot;applied&quot;: false,
                     &quot;method_completed&quot;: false,
@@ -163,7 +300,7 @@ Strict-Transport-Security: max-age=15768000
             }
         },
         {
-            &quot;id&quot;: &quot;2da0d93d-000f-5000-9000-1429bd7223bf&quot;,
+            &quot;id&quot;: &quot;2da0db0c-000f-5000-8000-19faed5214e7&quot;,
             &quot;status&quot;: &quot;canceled&quot;,
             &quot;amount&quot;: {
                 &quot;value&quot;: &quot;150.00&quot;,
@@ -176,7 +313,7 @@ Strict-Transport-Security: max-age=15768000
             },
             &quot;payment_method&quot;: {
                 &quot;type&quot;: &quot;bank_card&quot;,
-                &quot;id&quot;: &quot;2da0d93d-000f-5000-9000-1429bd7223bf&quot;,
+                &quot;id&quot;: &quot;2da0db0c-000f-5000-8000-19faed5214e7&quot;,
                 &quot;saved&quot;: false,
                 &quot;title&quot;: &quot;Bank card *4618&quot;,
                 &quot;card&quot;: {
@@ -191,7 +328,7 @@ Strict-Transport-Security: max-age=15768000
                     &quot;issuer_country&quot;: &quot;US&quot;
                 }
             },
-            &quot;created_at&quot;: &quot;2024-04-04T15:21:33.763Z&quot;,
+            &quot;created_at&quot;: &quot;2024-04-04T15:29:16.759Z&quot;,
             &quot;test&quot;: true,
             &quot;paid&quot;: false,
             &quot;refundable&quot;: false,
@@ -203,8 +340,8 @@ Strict-Transport-Security: max-age=15768000
                 &quot;reason&quot;: &quot;invalid_card_number&quot;
             },
             &quot;authorization_details&quot;: {
-                &quot;rrn&quot;: &quot;615523840381615&quot;,
-                &quot;auth_code&quot;: &quot;670993&quot;,
+                &quot;rrn&quot;: &quot;722379195482907&quot;,
+                &quot;auth_code&quot;: &quot;438048&quot;,
                 &quot;three_d_secure&quot;: {
                     &quot;applied&quot;: false,
                     &quot;method_completed&quot;: false,
@@ -213,7 +350,7 @@ Strict-Transport-Security: max-age=15768000
             }
         },
         {
-            &quot;id&quot;: &quot;2da0d8b3-000f-5000-9000-112a863f81fa&quot;,
+            &quot;id&quot;: &quot;2da0dab0-000f-5000-8000-13011aeb9f70&quot;,
             &quot;status&quot;: &quot;waiting_for_capture&quot;,
             &quot;amount&quot;: {
                 &quot;value&quot;: &quot;150.00&quot;,
@@ -226,7 +363,7 @@ Strict-Transport-Security: max-age=15768000
             },
             &quot;payment_method&quot;: {
                 &quot;type&quot;: &quot;bank_card&quot;,
-                &quot;id&quot;: &quot;2da0d8b3-000f-5000-9000-112a863f81fa&quot;,
+                &quot;id&quot;: &quot;2da0dab0-000f-5000-8000-13011aeb9f70&quot;,
                 &quot;saved&quot;: false,
                 &quot;title&quot;: &quot;Bank card *4444&quot;,
                 &quot;card&quot;: {
@@ -241,8 +378,8 @@ Strict-Transport-Security: max-age=15768000
                     &quot;issuer_country&quot;: &quot;US&quot;
                 }
             },
-            &quot;created_at&quot;: &quot;2024-04-04T15:19:15.195Z&quot;,
-            &quot;expires_at&quot;: &quot;2024-04-11T15:19:15.671Z&quot;,
+            &quot;created_at&quot;: &quot;2024-04-04T15:27:44.412Z&quot;,
+            &quot;expires_at&quot;: &quot;2024-04-11T15:27:44.938Z&quot;,
             &quot;test&quot;: true,
             &quot;paid&quot;: true,
             &quot;refundable&quot;: false,
@@ -250,8 +387,8 @@ Strict-Transport-Security: max-age=15768000
                 
             },
             &quot;authorization_details&quot;: {
-                &quot;rrn&quot;: &quot;694869658408856&quot;,
-                &quot;auth_code&quot;: &quot;293284&quot;,
+                &quot;rrn&quot;: &quot;710395081125939&quot;,
+                &quot;auth_code&quot;: &quot;308931&quot;,
                 &quot;three_d_secure&quot;: {
                     &quot;applied&quot;: false,
                     &quot;method_completed&quot;: false,
@@ -260,57 +397,7 @@ Strict-Transport-Security: max-age=15768000
             }
         },
         {
-            &quot;id&quot;: &quot;2da0d8ab-000f-5000-8000-1e412a92b743&quot;,
-            &quot;status&quot;: &quot;canceled&quot;,
-            &quot;amount&quot;: {
-                &quot;value&quot;: &quot;150.00&quot;,
-                &quot;currency&quot;: &quot;RUB&quot;
-            },
-            &quot;description&quot;: &quot;Заказ №74&quot;,
-            &quot;recipient&quot;: {
-                &quot;account_id&quot;: &quot;359240&quot;,
-                &quot;gateway_id&quot;: &quot;2215148&quot;
-            },
-            &quot;payment_method&quot;: {
-                &quot;type&quot;: &quot;bank_card&quot;,
-                &quot;id&quot;: &quot;2da0d8ab-000f-5000-8000-1e412a92b743&quot;,
-                &quot;saved&quot;: false,
-                &quot;title&quot;: &quot;Bank card *4543&quot;,
-                &quot;card&quot;: {
-                    &quot;first6&quot;: &quot;555555&quot;,
-                    &quot;last4&quot;: &quot;4543&quot;,
-                    &quot;expiry_year&quot;: &quot;2020&quot;,
-                    &quot;expiry_month&quot;: &quot;01&quot;,
-                    &quot;card_type&quot;: &quot;MasterCard&quot;,
-                    &quot;card_product&quot;: {
-                        &quot;code&quot;: &quot;E&quot;
-                    },
-                    &quot;issuer_country&quot;: &quot;US&quot;
-                }
-            },
-            &quot;created_at&quot;: &quot;2024-04-04T15:19:07.512Z&quot;,
-            &quot;test&quot;: true,
-            &quot;paid&quot;: false,
-            &quot;refundable&quot;: false,
-            &quot;metadata&quot;: {
-                
-            },
-            &quot;cancellation_details&quot;: {
-                &quot;party&quot;: &quot;payment_network&quot;,
-                &quot;reason&quot;: &quot;card_expired&quot;
-            },
-            &quot;authorization_details&quot;: {
-                &quot;rrn&quot;: &quot;220986940862713&quot;,
-                &quot;auth_code&quot;: &quot;365962&quot;,
-                &quot;three_d_secure&quot;: {
-                    &quot;applied&quot;: false,
-                    &quot;method_completed&quot;: false,
-                    &quot;challenge_completed&quot;: false
-                }
-            }
-        },
-        {
-            &quot;id&quot;: &quot;2da0d895-000f-5000-9000-1ebf44933123&quot;,
+            &quot;id&quot;: &quot;2da0daae-000f-5000-9000-16280f1442f6&quot;,
             &quot;status&quot;: &quot;waiting_for_capture&quot;,
             &quot;amount&quot;: {
                 &quot;value&quot;: &quot;150.00&quot;,
@@ -323,7 +410,7 @@ Strict-Transport-Security: max-age=15768000
             },
             &quot;payment_method&quot;: {
                 &quot;type&quot;: &quot;bank_card&quot;,
-                &quot;id&quot;: &quot;2da0d895-000f-5000-9000-1ebf44933123&quot;,
+                &quot;id&quot;: &quot;2da0daae-000f-5000-9000-16280f1442f6&quot;,
                 &quot;saved&quot;: false,
                 &quot;title&quot;: &quot;Bank card *4444&quot;,
                 &quot;card&quot;: {
@@ -338,8 +425,8 @@ Strict-Transport-Security: max-age=15768000
                     &quot;issuer_country&quot;: &quot;US&quot;
                 }
             },
-            &quot;created_at&quot;: &quot;2024-04-04T15:18:45.117Z&quot;,
-            &quot;expires_at&quot;: &quot;2024-04-11T15:18:45.881Z&quot;,
+            &quot;created_at&quot;: &quot;2024-04-04T15:27:42.878Z&quot;,
+            &quot;expires_at&quot;: &quot;2024-04-11T15:27:43.430Z&quot;,
             &quot;test&quot;: true,
             &quot;paid&quot;: true,
             &quot;refundable&quot;: false,
@@ -347,8 +434,8 @@ Strict-Transport-Security: max-age=15768000
                 
             },
             &quot;authorization_details&quot;: {
-                &quot;rrn&quot;: &quot;434412589794452&quot;,
-                &quot;auth_code&quot;: &quot;533194&quot;,
+                &quot;rrn&quot;: &quot;272266949244219&quot;,
+                &quot;auth_code&quot;: &quot;549072&quot;,
                 &quot;three_d_secure&quot;: {
                     &quot;applied&quot;: false,
                     &quot;method_completed&quot;: false,
@@ -357,7 +444,7 @@ Strict-Transport-Security: max-age=15768000
             }
         },
         {
-            &quot;id&quot;: &quot;2da0c42a-000f-5000-a000-1197aa785606&quot;,
+            &quot;id&quot;: &quot;2da0daad-000f-5000-8000-1bde710d58f7&quot;,
             &quot;status&quot;: &quot;waiting_for_capture&quot;,
             &quot;amount&quot;: {
                 &quot;value&quot;: &quot;150.00&quot;,
@@ -370,7 +457,7 @@ Strict-Transport-Security: max-age=15768000
             },
             &quot;payment_method&quot;: {
                 &quot;type&quot;: &quot;bank_card&quot;,
-                &quot;id&quot;: &quot;2da0c42a-000f-5000-a000-1197aa785606&quot;,
+                &quot;id&quot;: &quot;2da0daad-000f-5000-8000-1bde710d58f7&quot;,
                 &quot;saved&quot;: false,
                 &quot;title&quot;: &quot;Bank card *4444&quot;,
                 &quot;card&quot;: {
@@ -385,8 +472,8 @@ Strict-Transport-Security: max-age=15768000
                     &quot;issuer_country&quot;: &quot;US&quot;
                 }
             },
-            &quot;created_at&quot;: &quot;2024-04-04T13:51:38.029Z&quot;,
-            &quot;expires_at&quot;: &quot;2024-04-11T13:51:38.745Z&quot;,
+            &quot;created_at&quot;: &quot;2024-04-04T15:27:41.498Z&quot;,
+            &quot;expires_at&quot;: &quot;2024-04-11T15:27:42.135Z&quot;,
             &quot;test&quot;: true,
             &quot;paid&quot;: true,
             &quot;refundable&quot;: false,
@@ -394,8 +481,8 @@ Strict-Transport-Security: max-age=15768000
                 
             },
             &quot;authorization_details&quot;: {
-                &quot;rrn&quot;: &quot;771490115823922&quot;,
-                &quot;auth_code&quot;: &quot;293515&quot;,
+                &quot;rrn&quot;: &quot;115368370412601&quot;,
+                &quot;auth_code&quot;: &quot;398930&quot;,
                 &quot;three_d_secure&quot;: {
                     &quot;applied&quot;: false,
                     &quot;method_completed&quot;: false,
@@ -404,7 +491,7 @@ Strict-Transport-Security: max-age=15768000
             }
         },
         {
-            &quot;id&quot;: &quot;2da0975d-000f-5000-a000-19e68444c0bd&quot;,
+            &quot;id&quot;: &quot;2da0da8c-000f-5000-8000-14229d7be060&quot;,
             &quot;status&quot;: &quot;waiting_for_capture&quot;,
             &quot;amount&quot;: {
                 &quot;value&quot;: &quot;150.00&quot;,
@@ -417,7 +504,7 @@ Strict-Transport-Security: max-age=15768000
             },
             &quot;payment_method&quot;: {
                 &quot;type&quot;: &quot;bank_card&quot;,
-                &quot;id&quot;: &quot;2da0975d-000f-5000-a000-19e68444c0bd&quot;,
+                &quot;id&quot;: &quot;2da0da8c-000f-5000-8000-14229d7be060&quot;,
                 &quot;saved&quot;: false,
                 &quot;title&quot;: &quot;Bank card *4444&quot;,
                 &quot;card&quot;: {
@@ -432,8 +519,8 @@ Strict-Transport-Security: max-age=15768000
                     &quot;issuer_country&quot;: &quot;US&quot;
                 }
             },
-            &quot;created_at&quot;: &quot;2024-04-04T10:40:29.296Z&quot;,
-            &quot;expires_at&quot;: &quot;2024-04-11T10:40:29.798Z&quot;,
+            &quot;created_at&quot;: &quot;2024-04-04T15:27:08.291Z&quot;,
+            &quot;expires_at&quot;: &quot;2024-04-11T15:27:08.822Z&quot;,
             &quot;test&quot;: true,
             &quot;paid&quot;: true,
             &quot;refundable&quot;: false,
@@ -441,8 +528,8 @@ Strict-Transport-Security: max-age=15768000
                 
             },
             &quot;authorization_details&quot;: {
-                &quot;rrn&quot;: &quot;297866494692573&quot;,
-                &quot;auth_code&quot;: &quot;703825&quot;,
+                &quot;rrn&quot;: &quot;594861418881269&quot;,
+                &quot;auth_code&quot;: &quot;445756&quot;,
                 &quot;three_d_secure&quot;: {
                     &quot;applied&quot;: false,
                     &quot;method_completed&quot;: false,
@@ -451,57 +538,7 @@ Strict-Transport-Security: max-age=15768000
             }
         },
         {
-            &quot;id&quot;: &quot;2da09627-000f-5000-8000-1758e66c21e0&quot;,
-            &quot;status&quot;: &quot;canceled&quot;,
-            &quot;amount&quot;: {
-                &quot;value&quot;: &quot;150.00&quot;,
-                &quot;currency&quot;: &quot;RUB&quot;
-            },
-            &quot;description&quot;: &quot;Заказ №74&quot;,
-            &quot;recipient&quot;: {
-                &quot;account_id&quot;: &quot;359240&quot;,
-                &quot;gateway_id&quot;: &quot;2215148&quot;
-            },
-            &quot;payment_method&quot;: {
-                &quot;type&quot;: &quot;bank_card&quot;,
-                &quot;id&quot;: &quot;2da09627-000f-5000-8000-1758e66c21e0&quot;,
-                &quot;saved&quot;: false,
-                &quot;title&quot;: &quot;Bank card *4543&quot;,
-                &quot;card&quot;: {
-                    &quot;first6&quot;: &quot;555555&quot;,
-                    &quot;last4&quot;: &quot;4543&quot;,
-                    &quot;expiry_year&quot;: &quot;2020&quot;,
-                    &quot;expiry_month&quot;: &quot;01&quot;,
-                    &quot;card_type&quot;: &quot;MasterCard&quot;,
-                    &quot;card_product&quot;: {
-                        &quot;code&quot;: &quot;E&quot;
-                    },
-                    &quot;issuer_country&quot;: &quot;US&quot;
-                }
-            },
-            &quot;created_at&quot;: &quot;2024-04-04T10:35:19.170Z&quot;,
-            &quot;test&quot;: true,
-            &quot;paid&quot;: false,
-            &quot;refundable&quot;: false,
-            &quot;metadata&quot;: {
-                
-            },
-            &quot;cancellation_details&quot;: {
-                &quot;party&quot;: &quot;payment_network&quot;,
-                &quot;reason&quot;: &quot;card_expired&quot;
-            },
-            &quot;authorization_details&quot;: {
-                &quot;rrn&quot;: &quot;292636678414509&quot;,
-                &quot;auth_code&quot;: &quot;624728&quot;,
-                &quot;three_d_secure&quot;: {
-                    &quot;applied&quot;: false,
-                    &quot;method_completed&quot;: false,
-                    &quot;challenge_completed&quot;: false
-                }
-            }
-        },
-        {
-            &quot;id&quot;: &quot;2da08dfc-000f-5000-8000-1b6e3f8c7c15&quot;,
+            &quot;id&quot;: &quot;2da0da52-000f-5000-9000-1388222694a1&quot;,
             &quot;status&quot;: &quot;waiting_for_capture&quot;,
             &quot;amount&quot;: {
                 &quot;value&quot;: &quot;150.00&quot;,
@@ -514,50 +551,7 @@ Strict-Transport-Security: max-age=15768000
             },
             &quot;payment_method&quot;: {
                 &quot;type&quot;: &quot;bank_card&quot;,
-                &quot;id&quot;: &quot;2da08dfc-000f-5000-8000-1b6e3f8c7c15&quot;,
-                &quot;saved&quot;: false,
-                &quot;title&quot;: &quot;Bank card *2987&quot;,
-                &quot;card&quot;: {
-                    &quot;first6&quot;: &quot;220247&quot;,
-                    &quot;last4&quot;: &quot;2987&quot;,
-                    &quot;expiry_year&quot;: &quot;2020&quot;,
-                    &quot;expiry_month&quot;: &quot;01&quot;,
-                    &quot;card_type&quot;: &quot;Unknown&quot;
-                }
-            },
-            &quot;created_at&quot;: &quot;2024-04-04T10:00:28.931Z&quot;,
-            &quot;expires_at&quot;: &quot;2024-04-11T10:00:29.425Z&quot;,
-            &quot;test&quot;: true,
-            &quot;paid&quot;: true,
-            &quot;refundable&quot;: false,
-            &quot;metadata&quot;: {
-                
-            },
-            &quot;authorization_details&quot;: {
-                &quot;rrn&quot;: &quot;195130613751393&quot;,
-                &quot;auth_code&quot;: &quot;825029&quot;,
-                &quot;three_d_secure&quot;: {
-                    &quot;applied&quot;: false,
-                    &quot;method_completed&quot;: false,
-                    &quot;challenge_completed&quot;: false
-                }
-            }
-        },
-        {
-            &quot;id&quot;: &quot;2da087ed-000f-5000-a000-1d684ae13d49&quot;,
-            &quot;status&quot;: &quot;waiting_for_capture&quot;,
-            &quot;amount&quot;: {
-                &quot;value&quot;: &quot;150.00&quot;,
-                &quot;currency&quot;: &quot;RUB&quot;
-            },
-            &quot;description&quot;: &quot;Заказ №74&quot;,
-            &quot;recipient&quot;: {
-                &quot;account_id&quot;: &quot;359240&quot;,
-                &quot;gateway_id&quot;: &quot;2215148&quot;
-            },
-            &quot;payment_method&quot;: {
-                &quot;type&quot;: &quot;bank_card&quot;,
-                &quot;id&quot;: &quot;2da087ed-000f-5000-a000-1d684ae13d49&quot;,
+                &quot;id&quot;: &quot;2da0da52-000f-5000-9000-1388222694a1&quot;,
                 &quot;saved&quot;: false,
                 &quot;title&quot;: &quot;Bank card *4444&quot;,
                 &quot;card&quot;: {
@@ -572,8 +566,8 @@ Strict-Transport-Security: max-age=15768000
                     &quot;issuer_country&quot;: &quot;US&quot;
                 }
             },
-            &quot;created_at&quot;: &quot;2024-04-04T09:34:37.744Z&quot;,
-            &quot;expires_at&quot;: &quot;2024-04-11T09:34:38.504Z&quot;,
+            &quot;created_at&quot;: &quot;2024-04-04T15:26:10.821Z&quot;,
+            &quot;expires_at&quot;: &quot;2024-04-11T15:26:11.297Z&quot;,
             &quot;test&quot;: true,
             &quot;paid&quot;: true,
             &quot;refundable&quot;: false,
@@ -581,8 +575,8 @@ Strict-Transport-Security: max-age=15768000
                 
             },
             &quot;authorization_details&quot;: {
-                &quot;rrn&quot;: &quot;368871837350190&quot;,
-                &quot;auth_code&quot;: &quot;686236&quot;,
+                &quot;rrn&quot;: &quot;514890351210283&quot;,
+                &quot;auth_code&quot;: &quot;137553&quot;,
                 &quot;three_d_secure&quot;: {
                     &quot;applied&quot;: false,
                     &quot;method_completed&quot;: false,
@@ -593,19 +587,19 @@ Strict-Transport-Security: max-age=15768000
     ]
 }
 Request URI:	https://api.yookassa.ru/v3/payments/2d9cc60d-000f-5000-9000-131c0b967024
-Headers:		Idempotence-Key=84e01c0f-b8ba-456a-a678-6af873038dc1
+Headers:		Idempotence-Key=a3739194-84cd-4b76-96d1-2ba48a9e2146
 				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
 				Accept=*/*
 				Content-Type=application/json
 Body:			&lt;none&gt;
 HTTP/1.1 200 
 Server: nginx
-Date: Thu, 04 Apr 2024 15:23:38 GMT
+Date: Thu, 04 Apr 2024 15:31:30 GMT
 Content-Type: application/json;charset=UTF-8
 Content-Length: 1070
 Connection: keep-alive
 Keep-Alive: timeout=12
-Signature: v1 2da0d9ba 1 MGQCMEm8fesvh+3z/GrX8UHWGHRcLtj53ISqD3lsx0Q5FCdRJc/+TRopdvoeHQ6D3gKvJQIwVjzq69csMQcNNkWASyDXVqC8jaZAUdrei606AyYB/YBDncQechc20+s/MtWDAJvX
+Signature: v1 2da0db92 1 MGQCMCFZ5V6XJ40Ff5Ny7UkipPn4Mtq8jQ7YsrUNflggj5WgeRok8bYe7ZomA6lFdfZswgIwIgIFq1O46hJPwFiunTLa6C95vfCEwQDoY7caecqOwVPi7gELf5z9ONxCp8/fvhH/
 Strict-Transport-Security: max-age=15768000
 
 {
@@ -666,7 +660,7 @@ Strict-Transport-Security: max-age=15768000
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.5</a> at 4 апр. 2024 г., 18:23:50</p>
+<a href="http://www.gradle.org">Gradle 8.5</a> at 4 апр. 2024 г., 18:31:42</p>
 </div>
 </div>
 </body>

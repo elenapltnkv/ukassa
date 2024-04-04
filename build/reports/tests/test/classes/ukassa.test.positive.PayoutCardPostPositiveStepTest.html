@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.822s</div>
+<div class="counter">1.718s</div>
 <p>duration</p>
 </div>
 </td>
@@ -81,19 +81,19 @@
 <tr>
 <td class="success">Проверка получения валидных данных</td>
 <td class="success">payoutCheckAmountTest()</td>
-<td class="success">1.027s</td>
+<td class="success">1.117s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Проверка получения платежной системы</td>
 <td class="success">payoutCheckCardTypeTest()</td>
-<td class="success">0.376s</td>
+<td class="success">0.297s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Проверка ввода валидного номера карты</td>
 <td class="success">payoutCheckStatusTest()</td>
-<td class="success">0.419s</td>
+<td class="success">0.304s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -102,7 +102,7 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>Request URI:	https://api.yookassa.ru/v3/payments
-Headers:		Idempotence-Key=84e01c0f-b8ba-456a-a678-6af873038dc1
+Headers:		Idempotence-Key=a3739194-84cd-4b76-96d1-2ba48a9e2146
 				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
 				Accept=*/*
 				Content-Type=application/json
@@ -130,16 +130,16 @@ Body:
 }
 HTTP/1.1 200 
 Server: nginx
-Date: Thu, 04 Apr 2024 15:23:46 GMT
+Date: Thu, 04 Apr 2024 15:31:37 GMT
 Content-Type: application/json;charset=UTF-8
 Content-Length: 977
 Connection: keep-alive
 Keep-Alive: timeout=12
-Signature: v1 2da0d9c2 1 MGQCMBOmkigBjbm6CnHSL45uNW/2efOeNSdGWF4mziu2XciQX5qFOxWs8w3/zyrPunSU8gIwA7/uIIpiqURZQN9qMgKb91vTZLOz5BS8/U0RHGX+fika2xQeNDNnT/eBl4Jm4EPy
+Signature: v1 2da0db99 1 MGUCMGVaE9+LVY7R3KBLkMh7MvAlfuinFALZfv9E3LHS4W4cdOg554yR8uXSmR8rSBsL5wIxAIwv6uv68B/hlsV9Pu/B0ehTmFy9jcd0aIm3Qd367D3XwKmzLHI1cXq3+em20oG3cw==
 Strict-Transport-Security: max-age=15768000
 
 {
-    &quot;id&quot;: &quot;2da0d9c1-000f-5000-8000-1f9e2e73a7a0&quot;,
+    &quot;id&quot;: &quot;2da0db98-000f-5000-8000-10aa6a1491a5&quot;,
     &quot;status&quot;: &quot;waiting_for_capture&quot;,
     &quot;amount&quot;: {
         &quot;value&quot;: &quot;150.00&quot;,
@@ -152,7 +152,7 @@ Strict-Transport-Security: max-age=15768000
     },
     &quot;payment_method&quot;: {
         &quot;type&quot;: &quot;bank_card&quot;,
-        &quot;id&quot;: &quot;2da0d9c1-000f-5000-8000-1f9e2e73a7a0&quot;,
+        &quot;id&quot;: &quot;2da0db98-000f-5000-8000-10aa6a1491a5&quot;,
         &quot;saved&quot;: false,
         &quot;title&quot;: &quot;Bank card *2987&quot;,
         &quot;card&quot;: {
@@ -163,8 +163,8 @@ Strict-Transport-Security: max-age=15768000
             &quot;card_type&quot;: &quot;Mir&quot;
         }
     },
-    &quot;created_at&quot;: &quot;2024-04-04T15:23:45.598Z&quot;,
-    &quot;expires_at&quot;: &quot;2024-04-11T15:23:46.036Z&quot;,
+    &quot;created_at&quot;: &quot;2024-04-04T15:31:36.811Z&quot;,
+    &quot;expires_at&quot;: &quot;2024-04-11T15:31:37.376Z&quot;,
     &quot;test&quot;: true,
     &quot;paid&quot;: true,
     &quot;refundable&quot;: false,
@@ -172,8 +172,8 @@ Strict-Transport-Security: max-age=15768000
         
     },
     &quot;authorization_details&quot;: {
-        &quot;rrn&quot;: &quot;644168332505691&quot;,
-        &quot;auth_code&quot;: &quot;274388&quot;,
+        &quot;rrn&quot;: &quot;794451058978485&quot;,
+        &quot;auth_code&quot;: &quot;209872&quot;,
         &quot;three_d_secure&quot;: {
             &quot;applied&quot;: false,
             &quot;method_completed&quot;: false,
@@ -182,7 +182,7 @@ Strict-Transport-Security: max-age=15768000
     }
 }
 Request URI:	https://api.yookassa.ru/v3/payments
-Headers:		Idempotence-Key=84e01c0f-b8ba-456a-a678-6af873038dc1
+Headers:		Idempotence-Key=a3739194-84cd-4b76-96d1-2ba48a9e2146
 				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
 				Accept=*/*
 				Content-Type=application/json
@@ -210,16 +210,16 @@ Body:
 }
 HTTP/1.1 200 
 Server: nginx
-Date: Thu, 04 Apr 2024 15:23:46 GMT
+Date: Thu, 04 Apr 2024 15:31:37 GMT
 Content-Type: application/json;charset=UTF-8
 Content-Length: 977
 Connection: keep-alive
 Keep-Alive: timeout=12
-Signature: v1 2da0d9c2 1 MGQCMBN1EtKSUJSWpUVOVhw8DG/jEv4bftAA3dyxNGHjAtyamXEWxxjHL0IjHb859rviXwIwRHbziceeGemaxTgpkIYNAPod0fmho6VayAMQfw3Qsnj5sCMbTDtA9pUVBfrSi4wx
+Signature: v1 2da0db99 1 MGQCMD+na1FR7fwgnySKsSWYFCaF1+TK+sEhmQzcwvdj6AzylR2AnII7dBK8640FKKPb4wIwZYlYZiYpIL9ScO0XXZs82BDY8vmGHG+e87wG7fA10GQ3F2T/Bp0CPDxwK7IHH4Eb
 Strict-Transport-Security: max-age=15768000
 
 {
-    &quot;id&quot;: &quot;2da0d9c1-000f-5000-8000-1f9e2e73a7a0&quot;,
+    &quot;id&quot;: &quot;2da0db98-000f-5000-8000-10aa6a1491a5&quot;,
     &quot;status&quot;: &quot;waiting_for_capture&quot;,
     &quot;amount&quot;: {
         &quot;value&quot;: &quot;150.00&quot;,
@@ -232,7 +232,7 @@ Strict-Transport-Security: max-age=15768000
     },
     &quot;payment_method&quot;: {
         &quot;type&quot;: &quot;bank_card&quot;,
-        &quot;id&quot;: &quot;2da0d9c1-000f-5000-8000-1f9e2e73a7a0&quot;,
+        &quot;id&quot;: &quot;2da0db98-000f-5000-8000-10aa6a1491a5&quot;,
         &quot;saved&quot;: false,
         &quot;title&quot;: &quot;Bank card *2987&quot;,
         &quot;card&quot;: {
@@ -243,8 +243,8 @@ Strict-Transport-Security: max-age=15768000
             &quot;card_type&quot;: &quot;Mir&quot;
         }
     },
-    &quot;created_at&quot;: &quot;2024-04-04T15:23:45.598Z&quot;,
-    &quot;expires_at&quot;: &quot;2024-04-11T15:23:46.036Z&quot;,
+    &quot;created_at&quot;: &quot;2024-04-04T15:31:36.811Z&quot;,
+    &quot;expires_at&quot;: &quot;2024-04-11T15:31:37.376Z&quot;,
     &quot;test&quot;: true,
     &quot;paid&quot;: true,
     &quot;refundable&quot;: false,
@@ -252,8 +252,8 @@ Strict-Transport-Security: max-age=15768000
         
     },
     &quot;authorization_details&quot;: {
-        &quot;rrn&quot;: &quot;644168332505691&quot;,
-        &quot;auth_code&quot;: &quot;274388&quot;,
+        &quot;rrn&quot;: &quot;794451058978485&quot;,
+        &quot;auth_code&quot;: &quot;209872&quot;,
         &quot;three_d_secure&quot;: {
             &quot;applied&quot;: false,
             &quot;method_completed&quot;: false,
@@ -262,7 +262,7 @@ Strict-Transport-Security: max-age=15768000
     }
 }
 Request URI:	https://api.yookassa.ru/v3/payments
-Headers:		Idempotence-Key=84e01c0f-b8ba-456a-a678-6af873038dc1
+Headers:		Idempotence-Key=a3739194-84cd-4b76-96d1-2ba48a9e2146
 				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
 				Accept=*/*
 				Content-Type=application/json
@@ -290,16 +290,16 @@ Body:
 }
 HTTP/1.1 200 
 Server: nginx
-Date: Thu, 04 Apr 2024 15:23:46 GMT
+Date: Thu, 04 Apr 2024 15:31:38 GMT
 Content-Type: application/json;charset=UTF-8
 Content-Length: 977
 Connection: keep-alive
 Keep-Alive: timeout=12
-Signature: v1 2da0d9c2 1 MGQCMHG2tik64Dcz3s6XqazS1pT34YY8JyIZLUCArRecjEzKl26g+c363sPHLL0sZ6++BgIwcsUbGHJTtGTYdVrastDNvuuhtULS42X08ynN1uvYdNHNcQbzFfajXujpNsJLG35r
+Signature: v1 2da0db9a 1 MGQCMBrzKvarLJ04vaRVjXLCJq6uLFFskj8lYpmC5ctLhCfqknrlMZxqvxfpZJp/mBnwIAIwJ7RMch32EP950vCB63IswH82nfbtzeQLx/awnJuDJ1dt4y19ZEpIDRiI0Od2r8Re
 Strict-Transport-Security: max-age=15768000
 
 {
-    &quot;id&quot;: &quot;2da0d9c1-000f-5000-8000-1f9e2e73a7a0&quot;,
+    &quot;id&quot;: &quot;2da0db98-000f-5000-8000-10aa6a1491a5&quot;,
     &quot;status&quot;: &quot;waiting_for_capture&quot;,
     &quot;amount&quot;: {
         &quot;value&quot;: &quot;150.00&quot;,
@@ -312,7 +312,7 @@ Strict-Transport-Security: max-age=15768000
     },
     &quot;payment_method&quot;: {
         &quot;type&quot;: &quot;bank_card&quot;,
-        &quot;id&quot;: &quot;2da0d9c1-000f-5000-8000-1f9e2e73a7a0&quot;,
+        &quot;id&quot;: &quot;2da0db98-000f-5000-8000-10aa6a1491a5&quot;,
         &quot;saved&quot;: false,
         &quot;title&quot;: &quot;Bank card *2987&quot;,
         &quot;card&quot;: {
@@ -323,8 +323,8 @@ Strict-Transport-Security: max-age=15768000
             &quot;card_type&quot;: &quot;Mir&quot;
         }
     },
-    &quot;created_at&quot;: &quot;2024-04-04T15:23:45.598Z&quot;,
-    &quot;expires_at&quot;: &quot;2024-04-11T15:23:46.036Z&quot;,
+    &quot;created_at&quot;: &quot;2024-04-04T15:31:36.811Z&quot;,
+    &quot;expires_at&quot;: &quot;2024-04-11T15:31:37.376Z&quot;,
     &quot;test&quot;: true,
     &quot;paid&quot;: true,
     &quot;refundable&quot;: false,
@@ -332,8 +332,8 @@ Strict-Transport-Security: max-age=15768000
         
     },
     &quot;authorization_details&quot;: {
-        &quot;rrn&quot;: &quot;644168332505691&quot;,
-        &quot;auth_code&quot;: &quot;274388&quot;,
+        &quot;rrn&quot;: &quot;794451058978485&quot;,
+        &quot;auth_code&quot;: &quot;209872&quot;,
         &quot;three_d_secure&quot;: {
             &quot;applied&quot;: false,
             &quot;method_completed&quot;: false,
@@ -352,7 +352,7 @@ Strict-Transport-Security: max-age=15768000
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.5</a> at 4 апр. 2024 г., 18:23:50</p>
+<a href="http://www.gradle.org">Gradle 8.5</a> at 4 апр. 2024 г., 18:31:42</p>
 </div>
 </div>
 </body>

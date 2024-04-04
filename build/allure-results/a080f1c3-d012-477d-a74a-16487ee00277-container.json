@@ -1,0 +1,1 @@
+{"uuid":"a080f1c3-d012-477d-a74a-16487ee00277","name":"Проверка ввода валидного номера карты","children":["dad8dd3c-eefb-48c8-b7e2-2a7011b87f41"],"befores":[{"name":"beforeEach","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1712244697582,"stop":1712244697582}],"afters":[],"start":1712244697579,"stop":1712244697884}

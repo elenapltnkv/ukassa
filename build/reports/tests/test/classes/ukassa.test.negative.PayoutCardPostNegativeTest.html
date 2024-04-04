@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">7.011s</div>
+<div class="counter">6.179s</div>
 <p>duration</p>
 </div>
 </td>
@@ -81,25 +81,25 @@
 <tr>
 <td class="success">Проверка срока действия карты</td>
 <td class="success">payoutCancellationReasonTest()</td>
-<td class="success">3.167s</td>
+<td class="success">3.252s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Проверка текста ошибки при отправке невалидного номера карты</td>
 <td class="success">payoutErrorCardNumberTest()</td>
-<td class="success">1.026s</td>
+<td class="success">1.113s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Проверка ввода невалидного года Expiry_year</td>
 <td class="success">payoutErrorExpiryCardTest()</td>
-<td class="success">0.396s</td>
+<td class="success">0.387s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Проверка невалидного номера карты</td>
 <td class="success">payoutInvalidCardNumberTest()</td>
-<td class="success">2.422s</td>
+<td class="success">1.427s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -108,7 +108,7 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>Request URI:	https://api.yookassa.ru/v3/payments
-Headers:		Idempotence-Key=4c443b8d-8591-435a-ac0f-bc65dd0e4dc8
+Headers:		Idempotence-Key=8d2e6a36-0e2b-49dd-92be-4f6f0552483a
 				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
 				Accept=*/*
 				Content-Type=application/json
@@ -136,22 +136,22 @@ Body:
 }
 HTTP/1.1 400 
 Server: nginx
-Date: Thu, 04 Apr 2024 15:23:38 GMT
+Date: Thu, 04 Apr 2024 15:31:31 GMT
 Content-Type: application/json;charset=UTF-8
 Content-Length: 282
 Connection: keep-alive
 Keep-Alive: timeout=12
-Signature: v1 2da0d9ba 1 MGQCMHDtdcynnEck78if/MQGhkhoif059k3CSM4qUoQSKLX6P4xqdZy8mqee0xVDlkVAZwIwU6mUIEcHinGIcUPDMDqQh+QGNV90H1HijvjGIiCNpLNSWfXjDayaFIOBWSjnq1TD
+Signature: v1 2da0db93 1 MGQCMC1bFv7xzzLUFG/9yH3Gf3nNd75PKfgpWvEDgDSh7aTnMSh3FtjqbVpSwsvTA7KaVgIwVjaJ4A7Xzng8qMx2xmwWSVk7eOIKAPuM8gFym4qYuD/2TsFGS5Yyik2Wgk4HkKvv
 
 {
     &quot;type&quot;: &quot;error&quot;,
-    &quot;id&quot;: &quot;b3484ab0-c71b-42d8-85b1-8a739039cf79&quot;,
+    &quot;id&quot;: &quot;78df57ca-76b9-491c-833d-e520eaa1dbea&quot;,
     &quot;code&quot;: &quot;invalid_request&quot;,
     &quot;description&quot;: &quot;Error in the bank card number. Specify a valid number. You can validate the number using the Luhn algorithm.&quot;,
     &quot;parameter&quot;: &quot;payment_method_data.card.number&quot;
 }
 Request URI:	https://api.yookassa.ru/v3/payments
-Headers:		Idempotence-Key=8c37d8dc-65ab-495b-af11-74f4f8e2496a
+Headers:		Idempotence-Key=ffc69706-3624-436b-8839-b559b83952cc
 				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
 				Accept=*/*
 				Content-Type=application/json
@@ -179,16 +179,16 @@ Body:
 }
 HTTP/1.1 200 
 Server: nginx
-Date: Thu, 04 Apr 2024 15:23:41 GMT
+Date: Thu, 04 Apr 2024 15:31:32 GMT
 Content-Type: application/json;charset=UTF-8
 Content-Length: 1119
 Connection: keep-alive
 Keep-Alive: timeout=12
-Signature: v1 2da0d9bd 1 MGQCMDXIGlocemGmn8GtvpEAYLZjhRjzO/tRdBfx83sXXWberp8mSEtazTi+GeW4joun5QIwRn9wSHFaSeEQX13dxuummAp2CuZZQNBzPXYcGecnU8IaIlbOvLEvkiYGsfvLGbl3
+Signature: v1 2da0db94 1 MGQCMDpibb1a1VAv/gW8zGC/wWZcKa/Dl+5U9ToPsUEEAxIxoJ2z2z16ADJYqEKpEAjFrwIwF13PfFvFu5HsCyZtwSkqDNh+Hq3obvA4HPJ196Ag9w1AKJ3l93TlgfuJTSjKl/yd
 Strict-Transport-Security: max-age=15768000
 
 {
-    &quot;id&quot;: &quot;2da0d9bb-000f-5000-9000-18abaaf5d091&quot;,
+    &quot;id&quot;: &quot;2da0db93-000f-5000-8000-16de035255a2&quot;,
     &quot;status&quot;: &quot;canceled&quot;,
     &quot;amount&quot;: {
         &quot;value&quot;: &quot;150.00&quot;,
@@ -201,7 +201,7 @@ Strict-Transport-Security: max-age=15768000
     },
     &quot;payment_method&quot;: {
         &quot;type&quot;: &quot;bank_card&quot;,
-        &quot;id&quot;: &quot;2da0d9bb-000f-5000-9000-18abaaf5d091&quot;,
+        &quot;id&quot;: &quot;2da0db93-000f-5000-8000-16de035255a2&quot;,
         &quot;saved&quot;: false,
         &quot;title&quot;: &quot;Bank card *4618&quot;,
         &quot;card&quot;: {
@@ -216,7 +216,7 @@ Strict-Transport-Security: max-age=15768000
             &quot;issuer_country&quot;: &quot;US&quot;
         }
     },
-    &quot;created_at&quot;: &quot;2024-04-04T15:23:39.498Z&quot;,
+    &quot;created_at&quot;: &quot;2024-04-04T15:31:31.697Z&quot;,
     &quot;test&quot;: true,
     &quot;paid&quot;: false,
     &quot;refundable&quot;: false,
@@ -228,8 +228,8 @@ Strict-Transport-Security: max-age=15768000
         &quot;reason&quot;: &quot;invalid_card_number&quot;
     },
     &quot;authorization_details&quot;: {
-        &quot;rrn&quot;: &quot;288649985008753&quot;,
-        &quot;auth_code&quot;: &quot;273329&quot;,
+        &quot;rrn&quot;: &quot;310457283885351&quot;,
+        &quot;auth_code&quot;: &quot;198643&quot;,
         &quot;three_d_secure&quot;: {
             &quot;applied&quot;: false,
             &quot;method_completed&quot;: false,
@@ -238,7 +238,7 @@ Strict-Transport-Security: max-age=15768000
     }
 }
 Request URI:	https://api.yookassa.ru/v3/payments
-Headers:		Idempotence-Key=32c13ca4-4e6c-4797-bc59-8331a8f890fb
+Headers:		Idempotence-Key=6c450aa5-797c-4951-ac90-ba74c818336f
 				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
 				Accept=*/*
 				Content-Type=application/json
@@ -266,16 +266,16 @@ Body:
 }
 HTTP/1.1 200 
 Server: nginx
-Date: Thu, 04 Apr 2024 15:23:43 GMT
+Date: Thu, 04 Apr 2024 15:31:35 GMT
 Content-Type: application/json;charset=UTF-8
 Content-Length: 1112
 Connection: keep-alive
 Keep-Alive: timeout=12
-Signature: v1 2da0d9bf 1 MGQCMDrQoFGxluSUruRu+f1bctdYXLnNnPtY7CqKJyX3Y/IWsf7GhAYMqQOdcTsjtb41DgIwGg773oNY0x0ODFHUtsjkTfTKr1qCe/fD6Cgv1t7+mtKpoPRNMTwH/Ve7OcglrcjS
+Signature: v1 2da0db97 1 MGQCMBfXhMMR+LMjJq/6A9qq9jOqmHjvz1b7Vx3on9kugfAVz7os+zZus9c1REbFvoXDIgIwJ8srizkvwiHWQciQ9X8zQ/K6fyB69waRs0i8ILOdeu1lIrm5PVzSed6r1MsGHtXI
 Strict-Transport-Security: max-age=15768000
 
 {
-    &quot;id&quot;: &quot;2da0d9bd-000f-5000-a000-1dd2fe412a8b&quot;,
+    &quot;id&quot;: &quot;2da0db95-000f-5000-8000-10576f3b25eb&quot;,
     &quot;status&quot;: &quot;canceled&quot;,
     &quot;amount&quot;: {
         &quot;value&quot;: &quot;150.00&quot;,
@@ -288,7 +288,7 @@ Strict-Transport-Security: max-age=15768000
     },
     &quot;payment_method&quot;: {
         &quot;type&quot;: &quot;bank_card&quot;,
-        &quot;id&quot;: &quot;2da0d9bd-000f-5000-a000-1dd2fe412a8b&quot;,
+        &quot;id&quot;: &quot;2da0db95-000f-5000-8000-10576f3b25eb&quot;,
         &quot;saved&quot;: false,
         &quot;title&quot;: &quot;Bank card *4543&quot;,
         &quot;card&quot;: {
@@ -303,7 +303,7 @@ Strict-Transport-Security: max-age=15768000
             &quot;issuer_country&quot;: &quot;US&quot;
         }
     },
-    &quot;created_at&quot;: &quot;2024-04-04T15:23:41.829Z&quot;,
+    &quot;created_at&quot;: &quot;2024-04-04T15:31:33.086Z&quot;,
     &quot;test&quot;: true,
     &quot;paid&quot;: false,
     &quot;refundable&quot;: false,
@@ -315,8 +315,8 @@ Strict-Transport-Security: max-age=15768000
         &quot;reason&quot;: &quot;card_expired&quot;
     },
     &quot;authorization_details&quot;: {
-        &quot;rrn&quot;: &quot;632471402686902&quot;,
-        &quot;auth_code&quot;: &quot;853628&quot;,
+        &quot;rrn&quot;: &quot;917961395587685&quot;,
+        &quot;auth_code&quot;: &quot;774129&quot;,
         &quot;three_d_secure&quot;: {
             &quot;applied&quot;: false,
             &quot;method_completed&quot;: false,
@@ -325,7 +325,7 @@ Strict-Transport-Security: max-age=15768000
     }
 }
 Request URI:	https://api.yookassa.ru/v3/payments
-Headers:		Idempotence-Key=7ec7b321-6c93-4ff9-b3e7-dee0cf3534c3
+Headers:		Idempotence-Key=b297e145-9a9c-4e46-a798-49afdd621930
 				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
 				Accept=*/*
 				Content-Type=application/json
@@ -353,16 +353,16 @@ Body:
 }
 HTTP/1.1 400 
 Server: nginx
-Date: Thu, 04 Apr 2024 15:23:45 GMT
+Date: Thu, 04 Apr 2024 15:31:36 GMT
 Content-Type: application/json;charset=UTF-8
 Content-Length: 232
 Connection: keep-alive
 Keep-Alive: timeout=12
-Signature: v1 2da0d9c1 1 MGQCMGLZ6y0Z/6NZUPvKKR7/L6rz9ax/e9bc+RelQbSwiFGTVpZDZYMqX3LeEH2ZfzpJ1QIwe+DT/JIY6cecHWZFkvxWxIRsGgaU5SmrW7MkxwkxMf1J4woTw9tn2tD0JsJ2FyE2
+Signature: v1 2da0db98 1 MGQCMEWXA9UvRu7P9UruBVNC0sO4vXvrXYPu6pyev5FgkTn8WQlI1FEQVmHuTA3lZsHnQAIwTlWLIDy7AzxEZIT64qX1TxltbYvMhX1s/FnvXEYDJ7Vj+KIDiMsqoZ+EXtiAERPW
 
 {
     &quot;type&quot;: &quot;error&quot;,
-    &quot;id&quot;: &quot;204f6a2a-dc3a-46d7-a8f4-06b6fafa7e81&quot;,
+    &quot;id&quot;: &quot;ad0a1297-e198-48c5-a231-d1f71bd47a09&quot;,
     &quot;code&quot;: &quot;invalid_request&quot;,
     &quot;description&quot;: &quot;Card expiry year is illegal. Must be a 4-digit number&quot;,
     &quot;parameter&quot;: &quot;payment_method_data.card.expiry_year&quot;
@@ -378,7 +378,7 @@ Signature: v1 2da0d9c1 1 MGQCMGLZ6y0Z/6NZUPvKKR7/L6rz9ax/e9bc+RelQbSwiFGTVpZDZYM
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.5</a> at 4 апр. 2024 г., 18:23:50</p>
+<a href="http://www.gradle.org">Gradle 8.5</a> at 4 апр. 2024 г., 18:31:42</p>
 </div>
 </div>
 </body>

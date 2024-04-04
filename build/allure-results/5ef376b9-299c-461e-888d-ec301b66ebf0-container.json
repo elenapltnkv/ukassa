@@ -1,0 +1,1 @@
+{"uuid":"5ef376b9-299c-461e-888d-ec301b66ebf0","name":"Проверка получения платежной системы","children":["aabe3ce7-40f6-40e0-b515-286b4ccc0142"],"befores":[{"name":"beforeEach","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1712244697891,"stop":1712244697891}],"afters":[],"start":1712244697886,"stop":1712244698186}
