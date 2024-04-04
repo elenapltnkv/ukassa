@@ -2,7 +2,7 @@ name: Test
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: ["master"]
+    branches: [ "master" ]
   # Allows running this workflow manually from the Actions tab
   workflow_dispatch:
     permissions:
@@ -26,13 +26,13 @@ jobs:
 
       # запускаем тесты
       - run: gradle clean positive
-      # скачиваем историю тестов
-      - uses: actions/checkout@v3
-        if: always()
-        continue-on-error: true
-        with:
-           ref: gh-pages
-           path: gh-pages
+          # скачиваем историю тестов
+          #- uses: actions/checkout@v3
+          #if: always()
+          #continue-on-error: true
+          #with:
+        #ref: gh-pages
+        #path: gh-pages
       # генерируем отчет
       - uses: simple-elf/allure-report-action@v1.7
         if: always()
