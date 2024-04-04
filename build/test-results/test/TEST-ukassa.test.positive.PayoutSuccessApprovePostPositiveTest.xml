@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ukassa.test.positive.PayoutSuccessApprovePostPositiveTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-04-04T15:23:49" hostname="user" time="0.691">
+  <properties/>
+  <testcase name="Проверка успешного подтверждения платежаб статус 'succeeded'" classname="ukassa.test.positive.PayoutSuccessApprovePostPositiveTest" time="0.407"/>
+  <testcase name="Проверка успешного подтверждения платежаб статус код 200" classname="ukassa.test.positive.PayoutSuccessApprovePostPositiveTest" time="0.278"/>
+  <system-out><![CDATA[Request URI:	https://api.yookassa.ru/v3/payments/2d9c9457-000f-5000-a000-1ea13968ba7c/capture
+Headers:		Idempotence-Key=84e01c0f-b8ba-456a-a678-6af873038dc1
+				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+				Accept=*/*
+				Content-Type=application/json
+Body:
+{
+    "amount": null
+}
+HTTP/1.1 200 
+Server: nginx
+Date: Thu, 04 Apr 2024 15:23:50 GMT
+Content-Type: application/json;charset=UTF-8
+Content-Length: 1208
+Connection: keep-alive
+Keep-Alive: timeout=12
+Signature: v1 2da0d9c6 1 MGQCMGQBTKYwBOsKRc0YR9NdMhfpgwHs1SUCFDlDx7pI/Aje9+gTKyTThrCsv1WFfqjEAgIwPxCawY4GokbrY38YPhe1aB4rZRCCILdXWRM4mbtEUi2R6p0hszRCUAHlca0ZVtQK
+Strict-Transport-Security: max-age=15768000
+
+{
+    "id": "2d9c9457-000f-5000-a000-1ea13968ba7c",
+    "status": "succeeded",
+    "amount": {
+        "value": "150.00",
+        "currency": "RUB"
+    },
+    "income_amount": {
+        "value": "144.75",
+        "currency": "RUB"
+    },
+    "description": "Заказ №74",
+    "recipient": {
+        "account_id": "359240",
+        "gateway_id": "2215148"
+    },
+    "payment_method": {
+        "type": "bank_card",
+        "id": "2d9c9457-000f-5000-a000-1ea13968ba7c",
+        "saved": false,
+        "title": "Bank card *4444",
+        "card": {
+            "first6": "555555",
+            "last4": "4444",
+            "expiry_year": "2020",
+            "expiry_month": "01",
+            "card_type": "MasterCard",
+            "card_product": {
+                "code": "E"
+            },
+            "issuer_country": "US"
+        }
+    },
+    "captured_at": "2024-04-01T09:39:16.724Z",
+    "created_at": "2024-04-01T09:38:31.688Z",
+    "test": true,
+    "refunded_amount": {
+        "value": "0.00",
+        "currency": "RUB"
+    },
+    "paid": true,
+    "refundable": true,
+    "metadata": {
+        
+    },
+    "authorization_details": {
+        "rrn": "200034122782729",
+        "auth_code": "668050",
+        "three_d_secure": {
+            "applied": false,
+            "method_completed": false,
+            "challenge_completed": false
+        }
+    }
+}
+Request URI:	https://api.yookassa.ru/v3/payments/2d9c9457-000f-5000-a000-1ea13968ba7c/capture
+Headers:		Idempotence-Key=84e01c0f-b8ba-456a-a678-6af873038dc1
+				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+				Accept=*/*
+				Content-Type=application/json
+Body:
+{
+    "amount": null
+}
+HTTP/1.1 200 
+Server: nginx
+Date: Thu, 04 Apr 2024 15:23:50 GMT
+Content-Type: application/json;charset=UTF-8
+Content-Length: 1208
+Connection: keep-alive
+Keep-Alive: timeout=12
+Signature: v1 2da0d9c6 1 MGUCMC2dgiAXx2YPm2HgCJ1IoVRxcpjhsRsCmM6ypd1QTZEsQl23AR1idxNwmuS4zQtcPgIxAIuOoFuOCeQZiuJMk1fe+vwCYgNe86ONrugOiAAiTYEQAAkN+N8CI3bK6PmzBeT//w==
+Strict-Transport-Security: max-age=15768000
+
+{
+    "id": "2d9c9457-000f-5000-a000-1ea13968ba7c",
+    "status": "succeeded",
+    "amount": {
+        "value": "150.00",
+        "currency": "RUB"
+    },
+    "income_amount": {
+        "value": "144.75",
+        "currency": "RUB"
+    },
+    "description": "Заказ №74",
+    "recipient": {
+        "account_id": "359240",
+        "gateway_id": "2215148"
+    },
+    "payment_method": {
+        "type": "bank_card",
+        "id": "2d9c9457-000f-5000-a000-1ea13968ba7c",
+        "saved": false,
+        "title": "Bank card *4444",
+        "card": {
+            "first6": "555555",
+            "last4": "4444",
+            "expiry_year": "2020",
+            "expiry_month": "01",
+            "card_type": "MasterCard",
+            "card_product": {
+                "code": "E"
+            },
+            "issuer_country": "US"
+        }
+    },
+    "captured_at": "2024-04-01T09:39:16.724Z",
+    "created_at": "2024-04-01T09:38:31.688Z",
+    "test": true,
+    "refunded_amount": {
+        "value": "0.00",
+        "currency": "RUB"
+    },
+    "paid": true,
+    "refundable": true,
+    "metadata": {
+        
+    },
+    "authorization_details": {
+        "rrn": "200034122782729",
+        "auth_code": "668050",
+        "three_d_secure": {
+            "applied": false,
+            "method_completed": false,
+            "challenge_completed": false
+        }
+    }
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

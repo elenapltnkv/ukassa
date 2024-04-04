@@ -1,5 +1,6 @@
 package ukassa.test.positive;
 
+import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -10,6 +11,7 @@ import static ukassa.spec.Specifications.resPect;
 import static ukassa.spec.Specifications.spec;
 
 public class PayoutSuccessCancelPostTest extends Base {
+    @Feature("Тест отклонения платежа")
     @Owner("samigullaeva.ea")
     @DisplayName("Проверка успешного отклонения платежа")
     @Test

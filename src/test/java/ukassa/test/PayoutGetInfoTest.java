@@ -1,5 +1,6 @@
 package ukassa.test;
 
+import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -10,6 +11,7 @@ import static ukassa.spec.Specifications.spec;
 
 
 public class PayoutGetInfoTest extends Base {
+    @Feature("Запрос информации по платежам")
     @Owner("samigullaeva.ea")
     @DisplayName("Проверка запроса информации по всем платежам")
     @Test
@@ -27,6 +29,7 @@ public class PayoutGetInfoTest extends Base {
 
     }
 
+    @Feature("Запрс информации по платежам")
     @Owner("samigullaeva.ea")
     @DisplayName("Проверка запроса информации по определенному платежу")
     @Test

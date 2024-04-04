@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - PayoutCardPostNegativeTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>PayoutCardPostNegativeTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ukassa.test.negative.html">ukassa.test.negative</a> &gt; PayoutCardPostNegativeTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">7.011s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Проверка срока действия карты</td>
+<td class="success">payoutCancellationReasonTest()</td>
+<td class="success">3.167s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Проверка текста ошибки при отправке невалидного номера карты</td>
+<td class="success">payoutErrorCardNumberTest()</td>
+<td class="success">1.026s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Проверка ввода невалидного года Expiry_year</td>
+<td class="success">payoutErrorExpiryCardTest()</td>
+<td class="success">0.396s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Проверка невалидного номера карты</td>
+<td class="success">payoutInvalidCardNumberTest()</td>
+<td class="success">2.422s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Request URI:	https://api.yookassa.ru/v3/payments
+Headers:		Idempotence-Key=4c443b8d-8591-435a-ac0f-bc65dd0e4dc8
+				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+				Accept=*/*
+				Content-Type=application/json
+Body:
+{
+    &quot;amount&quot;: {
+        &quot;value&quot;: &quot;150.00&quot;,
+        &quot;currency&quot;: &quot;RUB&quot;
+    },
+    &quot;payment_method_data&quot;: {
+        &quot;type&quot;: &quot;bank_card&quot;,
+        &quot;card&quot;: {
+            &quot;cardholder&quot;: &quot;MR CARDHOLDER&quot;,
+            &quot;csc&quot;: &quot;213&quot;,
+            &quot;expiry_month&quot;: &quot;01&quot;,
+            &quot;expiry_year&quot;: &quot;2020&quot;,
+            &quot;number&quot;: &quot;32558&quot;
+        }
+    },
+    &quot;confirmation&quot;: {
+        &quot;type&quot;: &quot;redirect&quot;,
+        &quot;return_url&quot;: &quot;https://www.example.com/return_url&quot;
+    },
+    &quot;description&quot;: &quot;Заказ №74&quot;
+}
+HTTP/1.1 400 
+Server: nginx
+Date: Thu, 04 Apr 2024 15:23:38 GMT
+Content-Type: application/json;charset=UTF-8
+Content-Length: 282
+Connection: keep-alive
+Keep-Alive: timeout=12
+Signature: v1 2da0d9ba 1 MGQCMHDtdcynnEck78if/MQGhkhoif059k3CSM4qUoQSKLX6P4xqdZy8mqee0xVDlkVAZwIwU6mUIEcHinGIcUPDMDqQh+QGNV90H1HijvjGIiCNpLNSWfXjDayaFIOBWSjnq1TD
+
+{
+    &quot;type&quot;: &quot;error&quot;,
+    &quot;id&quot;: &quot;b3484ab0-c71b-42d8-85b1-8a739039cf79&quot;,
+    &quot;code&quot;: &quot;invalid_request&quot;,
+    &quot;description&quot;: &quot;Error in the bank card number. Specify a valid number. You can validate the number using the Luhn algorithm.&quot;,
+    &quot;parameter&quot;: &quot;payment_method_data.card.number&quot;
+}
+Request URI:	https://api.yookassa.ru/v3/payments
+Headers:		Idempotence-Key=8c37d8dc-65ab-495b-af11-74f4f8e2496a
+				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+				Accept=*/*
+				Content-Type=application/json
+Body:
+{
+    &quot;amount&quot;: {
+        &quot;value&quot;: &quot;150.00&quot;,
+        &quot;currency&quot;: &quot;RUB&quot;
+    },
+    &quot;payment_method_data&quot;: {
+        &quot;type&quot;: &quot;bank_card&quot;,
+        &quot;card&quot;: {
+            &quot;cardholder&quot;: &quot;MR CARDHOLDER&quot;,
+            &quot;csc&quot;: &quot;213&quot;,
+            &quot;expiry_month&quot;: &quot;01&quot;,
+            &quot;expiry_year&quot;: &quot;2020&quot;,
+            &quot;number&quot;: &quot;5555555555554618&quot;
+        }
+    },
+    &quot;confirmation&quot;: {
+        &quot;type&quot;: &quot;redirect&quot;,
+        &quot;return_url&quot;: &quot;https://www.example.com/return_url&quot;
+    },
+    &quot;description&quot;: &quot;Заказ №74&quot;
+}
+HTTP/1.1 200 
+Server: nginx
+Date: Thu, 04 Apr 2024 15:23:41 GMT
+Content-Type: application/json;charset=UTF-8
+Content-Length: 1119
+Connection: keep-alive
+Keep-Alive: timeout=12
+Signature: v1 2da0d9bd 1 MGQCMDXIGlocemGmn8GtvpEAYLZjhRjzO/tRdBfx83sXXWberp8mSEtazTi+GeW4joun5QIwRn9wSHFaSeEQX13dxuummAp2CuZZQNBzPXYcGecnU8IaIlbOvLEvkiYGsfvLGbl3
+Strict-Transport-Security: max-age=15768000
+
+{
+    &quot;id&quot;: &quot;2da0d9bb-000f-5000-9000-18abaaf5d091&quot;,
+    &quot;status&quot;: &quot;canceled&quot;,
+    &quot;amount&quot;: {
+        &quot;value&quot;: &quot;150.00&quot;,
+        &quot;currency&quot;: &quot;RUB&quot;
+    },
+    &quot;description&quot;: &quot;Заказ №74&quot;,
+    &quot;recipient&quot;: {
+        &quot;account_id&quot;: &quot;359240&quot;,
+        &quot;gateway_id&quot;: &quot;2215148&quot;
+    },
+    &quot;payment_method&quot;: {
+        &quot;type&quot;: &quot;bank_card&quot;,
+        &quot;id&quot;: &quot;2da0d9bb-000f-5000-9000-18abaaf5d091&quot;,
+        &quot;saved&quot;: false,
+        &quot;title&quot;: &quot;Bank card *4618&quot;,
+        &quot;card&quot;: {
+            &quot;first6&quot;: &quot;555555&quot;,
+            &quot;last4&quot;: &quot;4618&quot;,
+            &quot;expiry_year&quot;: &quot;2020&quot;,
+            &quot;expiry_month&quot;: &quot;01&quot;,
+            &quot;card_type&quot;: &quot;MasterCard&quot;,
+            &quot;card_product&quot;: {
+                &quot;code&quot;: &quot;E&quot;
+            },
+            &quot;issuer_country&quot;: &quot;US&quot;
+        }
+    },
+    &quot;created_at&quot;: &quot;2024-04-04T15:23:39.498Z&quot;,
+    &quot;test&quot;: true,
+    &quot;paid&quot;: false,
+    &quot;refundable&quot;: false,
+    &quot;metadata&quot;: {
+        
+    },
+    &quot;cancellation_details&quot;: {
+        &quot;party&quot;: &quot;payment_network&quot;,
+        &quot;reason&quot;: &quot;invalid_card_number&quot;
+    },
+    &quot;authorization_details&quot;: {
+        &quot;rrn&quot;: &quot;288649985008753&quot;,
+        &quot;auth_code&quot;: &quot;273329&quot;,
+        &quot;three_d_secure&quot;: {
+            &quot;applied&quot;: false,
+            &quot;method_completed&quot;: false,
+            &quot;challenge_completed&quot;: false
+        }
+    }
+}
+Request URI:	https://api.yookassa.ru/v3/payments
+Headers:		Idempotence-Key=32c13ca4-4e6c-4797-bc59-8331a8f890fb
+				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+				Accept=*/*
+				Content-Type=application/json
+Body:
+{
+    &quot;amount&quot;: {
+        &quot;value&quot;: &quot;150.00&quot;,
+        &quot;currency&quot;: &quot;RUB&quot;
+    },
+    &quot;payment_method_data&quot;: {
+        &quot;type&quot;: &quot;bank_card&quot;,
+        &quot;card&quot;: {
+            &quot;cardholder&quot;: &quot;MR CARDHOLDER&quot;,
+            &quot;csc&quot;: &quot;213&quot;,
+            &quot;expiry_month&quot;: &quot;01&quot;,
+            &quot;expiry_year&quot;: &quot;2020&quot;,
+            &quot;number&quot;: &quot;5555555555554543&quot;
+        }
+    },
+    &quot;confirmation&quot;: {
+        &quot;type&quot;: &quot;redirect&quot;,
+        &quot;return_url&quot;: &quot;https://www.example.com/return_url&quot;
+    },
+    &quot;description&quot;: &quot;Заказ №74&quot;
+}
+HTTP/1.1 200 
+Server: nginx
+Date: Thu, 04 Apr 2024 15:23:43 GMT
+Content-Type: application/json;charset=UTF-8
+Content-Length: 1112
+Connection: keep-alive
+Keep-Alive: timeout=12
+Signature: v1 2da0d9bf 1 MGQCMDrQoFGxluSUruRu+f1bctdYXLnNnPtY7CqKJyX3Y/IWsf7GhAYMqQOdcTsjtb41DgIwGg773oNY0x0ODFHUtsjkTfTKr1qCe/fD6Cgv1t7+mtKpoPRNMTwH/Ve7OcglrcjS
+Strict-Transport-Security: max-age=15768000
+
+{
+    &quot;id&quot;: &quot;2da0d9bd-000f-5000-a000-1dd2fe412a8b&quot;,
+    &quot;status&quot;: &quot;canceled&quot;,
+    &quot;amount&quot;: {
+        &quot;value&quot;: &quot;150.00&quot;,
+        &quot;currency&quot;: &quot;RUB&quot;
+    },
+    &quot;description&quot;: &quot;Заказ №74&quot;,
+    &quot;recipient&quot;: {
+        &quot;account_id&quot;: &quot;359240&quot;,
+        &quot;gateway_id&quot;: &quot;2215148&quot;
+    },
+    &quot;payment_method&quot;: {
+        &quot;type&quot;: &quot;bank_card&quot;,
+        &quot;id&quot;: &quot;2da0d9bd-000f-5000-a000-1dd2fe412a8b&quot;,
+        &quot;saved&quot;: false,
+        &quot;title&quot;: &quot;Bank card *4543&quot;,
+        &quot;card&quot;: {
+            &quot;first6&quot;: &quot;555555&quot;,
+            &quot;last4&quot;: &quot;4543&quot;,
+            &quot;expiry_year&quot;: &quot;2020&quot;,
+            &quot;expiry_month&quot;: &quot;01&quot;,
+            &quot;card_type&quot;: &quot;MasterCard&quot;,
+            &quot;card_product&quot;: {
+                &quot;code&quot;: &quot;E&quot;
+            },
+            &quot;issuer_country&quot;: &quot;US&quot;
+        }
+    },
+    &quot;created_at&quot;: &quot;2024-04-04T15:23:41.829Z&quot;,
+    &quot;test&quot;: true,
+    &quot;paid&quot;: false,
+    &quot;refundable&quot;: false,
+    &quot;metadata&quot;: {
+        
+    },
+    &quot;cancellation_details&quot;: {
+        &quot;party&quot;: &quot;payment_network&quot;,
+        &quot;reason&quot;: &quot;card_expired&quot;
+    },
+    &quot;authorization_details&quot;: {
+        &quot;rrn&quot;: &quot;632471402686902&quot;,
+        &quot;auth_code&quot;: &quot;853628&quot;,
+        &quot;three_d_secure&quot;: {
+            &quot;applied&quot;: false,
+            &quot;method_completed&quot;: false,
+            &quot;challenge_completed&quot;: false
+        }
+    }
+}
+Request URI:	https://api.yookassa.ru/v3/payments
+Headers:		Idempotence-Key=7ec7b321-6c93-4ff9-b3e7-dee0cf3534c3
+				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+				Accept=*/*
+				Content-Type=application/json
+Body:
+{
+    &quot;amount&quot;: {
+        &quot;value&quot;: &quot;150.00&quot;,
+        &quot;currency&quot;: &quot;RUB&quot;
+    },
+    &quot;payment_method_data&quot;: {
+        &quot;type&quot;: &quot;bank_card&quot;,
+        &quot;card&quot;: {
+            &quot;cardholder&quot;: &quot;MR CARDHOLDER&quot;,
+            &quot;csc&quot;: &quot;213&quot;,
+            &quot;expiry_month&quot;: &quot;01&quot;,
+            &quot;expiry_year&quot;: &quot;20&quot;,
+            &quot;number&quot;: &quot;2202202212312379&quot;
+        }
+    },
+    &quot;confirmation&quot;: {
+        &quot;type&quot;: &quot;redirect&quot;,
+        &quot;return_url&quot;: &quot;https://www.example.com/return_url&quot;
+    },
+    &quot;description&quot;: &quot;Заказ №74&quot;
+}
+HTTP/1.1 400 
+Server: nginx
+Date: Thu, 04 Apr 2024 15:23:45 GMT
+Content-Type: application/json;charset=UTF-8
+Content-Length: 232
+Connection: keep-alive
+Keep-Alive: timeout=12
+Signature: v1 2da0d9c1 1 MGQCMGLZ6y0Z/6NZUPvKKR7/L6rz9ax/e9bc+RelQbSwiFGTVpZDZYMqX3LeEH2ZfzpJ1QIwe+DT/JIY6cecHWZFkvxWxIRsGgaU5SmrW7MkxwkxMf1J4woTw9tn2tD0JsJ2FyE2
+
+{
+    &quot;type&quot;: &quot;error&quot;,
+    &quot;id&quot;: &quot;204f6a2a-dc3a-46d7-a8f4-06b6fafa7e81&quot;,
+    &quot;code&quot;: &quot;invalid_request&quot;,
+    &quot;description&quot;: &quot;Card expiry year is illegal. Must be a 4-digit number&quot;,
+    &quot;parameter&quot;: &quot;payment_method_data.card.expiry_year&quot;
+}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.5</a> at 4 апр. 2024 г., 18:23:50</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+{"uuid":"7866050e-2334-4c30-b369-b821f21950da","name":"Проверка успешного отклонения платежа","children":["cf9d3c42-988c-4644-9ec1-497a32332398"],"befores":[{"name":"beforeEach","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1712244230407,"stop":1712244230407}],"afters":[],"start":1712244230404,"stop":1712244230806}

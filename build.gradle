@@ -26,6 +26,7 @@ dependencies {
             "org.slf4j:slf4j-simple:$slf4jVersion",
             "com.fasterxml.jackson.core:jackson-databind:2.16.1",
             "de.huxhorn.sulky:de.huxhorn.sulky.ulid:8.3.0",
+            "com.fasterxml.uuid:java-uuid-generator:4.3.0",
             "org.assertj:assertj-core:3.25.3"
     )
 }

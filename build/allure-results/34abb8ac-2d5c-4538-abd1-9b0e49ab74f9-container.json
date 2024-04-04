@@ -1,0 +1,1 @@
+{"uuid":"34abb8ac-2d5c-4538-abd1-9b0e49ab74f9","name":"Проверка запроса информации по определенному платежу","children":["68645b9a-47be-4d16-a0df-bc507d4de80b"],"befores":[{"name":"beforeEach","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1712244217804,"stop":1712244217804}],"afters":[],"start":1712244217801,"stop":1712244218141}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ukassa.test.positive.PayoutSuccessCancelPostTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-04T15:23:50" hostname="user" time="0.401">
+  <properties/>
+  <testcase name="Проверка успешного отклонения платежа" classname="ukassa.test.positive.PayoutSuccessCancelPostTest" time="0.401"/>
+  <system-out><![CDATA[Request URI:	https://api.yookassa.ru/v3/payments/2d9c96c5-000f-5000-a000-1b3bd0a22a74/cancel
+Headers:		Idempotence-Key=84e01c0f-b8ba-456a-a678-6af873038dc1
+				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+				Accept=*/*
+				Content-Type=application/json
+Body:			<none>
+HTTP/1.1 200 
+Server: nginx
+Date: Thu, 04 Apr 2024 15:23:50 GMT
+Content-Type: application/json;charset=UTF-8
+Content-Length: 1113
+Connection: keep-alive
+Keep-Alive: timeout=12
+Signature: v1 2da0d9c6 1 MGQCMClkOdZ6wjO+Jf0rp1NOqkv7P8ltghKGxiVmbBbdlFf5Qrm2yVZVodHldPvJml6KEAIwcJRoxvY6DsVocAXVBZ187eKQv3urdFC32CiSJVLkwpx89cjkTVD9PEpm0btCV/HO
+Strict-Transport-Security: max-age=15768000
+
+{
+    "id": "2d9c96c5-000f-5000-a000-1b3bd0a22a74",
+    "status": "canceled",
+    "amount": {
+        "value": "150.00",
+        "currency": "RUB"
+    },
+    "description": "Заказ №74",
+    "recipient": {
+        "account_id": "359240",
+        "gateway_id": "2215148"
+    },
+    "payment_method": {
+        "type": "bank_card",
+        "id": "2d9c96c5-000f-5000-a000-1b3bd0a22a74",
+        "saved": false,
+        "title": "Bank card *4444",
+        "card": {
+            "first6": "555555",
+            "last4": "4444",
+            "expiry_year": "2020",
+            "expiry_month": "01",
+            "card_type": "MasterCard",
+            "card_product": {
+                "code": "E"
+            },
+            "issuer_country": "US"
+        }
+    },
+    "created_at": "2024-04-01T09:48:53.457Z",
+    "test": true,
+    "paid": false,
+    "refundable": false,
+    "metadata": {
+        
+    },
+    "cancellation_details": {
+        "party": "merchant",
+        "reason": "canceled_by_merchant"
+    },
+    "authorization_details": {
+        "rrn": "867465446368614",
+        "auth_code": "838509",
+        "three_d_secure": {
+            "applied": false,
+            "method_completed": false,
+            "challenge_completed": false
+        }
+    }
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

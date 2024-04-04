@@ -1,5 +1,6 @@
 package ukassa.test.positive;
 
+import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
@@ -9,13 +10,15 @@ import org.junit.jupiter.api.Test;
 import ukassa.Base;
 import ukassa.model.DataModel;
 import ukassa.model.DataResponseModel;
+import ukassa.spec.Specifications;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
-import static ukassa.spec.Specifications.resPect;
-import static ukassa.spec.Specifications.spec;
+import static ukassa.spec.Specifications.*;
 
 public class PayoutCardPostPositiveTest extends Base {
+
+    @Feature("Позитивные тесты")
     @Owner("samigullaeva.ea")
     @DisplayName("Проверка статуса 'waiting_for_capture'")
     @Test
@@ -58,6 +61,8 @@ public class PayoutCardPostPositiveTest extends Base {
                 .body("status", is("waiting_for_capture"));
 
     }
+
+    @Feature("Позитивные тесты")
     @Owner("samigullaeva.ea")
     @DisplayName("Проверка отображения правильной суммы в ответе")
     @Test
@@ -90,7 +95,7 @@ public class PayoutCardPostPositiveTest extends Base {
         dataModel.setDescription("Заказ №74");
 
 
-        DataResponseModel responseModel = given(spec)
+        DataResponseModel responseModel = given(spec3)
                 .body(dataModel)
                 .when()
                 .post()
@@ -105,6 +110,7 @@ public class PayoutCardPostPositiveTest extends Base {
     }
 
     //"card_type": "MasterCard",
+    @Feature("Позитивные тесты")
     @Owner("samigullaeva.ea")
     @DisplayName("Проверка card_type в ответе")
     @Test
@@ -138,7 +144,7 @@ public class PayoutCardPostPositiveTest extends Base {
         dataModel.setDescription("Заказ №74");
 
 
-        DataResponseModel responseModel = given(spec)
+        DataResponseModel responseModel = given(spec1)
                 .body(dataModel)
                 .when()
                 .post()

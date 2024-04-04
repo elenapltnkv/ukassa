@@ -1,6 +1,8 @@
 package ukassa.test.negative;
 
+import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
+import io.restassured.specification.RequestSpecification;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -9,13 +11,14 @@ import ukassa.Base;
 import ukassa.model.DataModel;
 import ukassa.model.DataResponseNegativeModel;
 import ukassa.model.ErrorModel;
+import ukassa.spec.Specifications;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
-import static ukassa.spec.Specifications.resPect;
-import static ukassa.spec.Specifications.spec;
+import static ukassa.spec.Specifications.*;
 
 public class PayoutCardPostNegativeTest extends Base {
+    @Feature("Негативные тесты")
     @Owner("samigullaeva.ea")
     @DisplayName("Проверка срока действия карты")
     @Test
@@ -46,7 +49,7 @@ public class PayoutCardPostNegativeTest extends Base {
         dataModel.setDescription("Заказ №74");
 
 
-        given(spec)
+        given(spec4)
                 .body(dataModel)
                 .when()
                 .post()
@@ -56,6 +59,8 @@ public class PayoutCardPostNegativeTest extends Base {
                 .body("cancellation_details.reason", is("card_expired"));
 
     }
+
+    @Feature("Негативные тесты")
     @Owner("samigullaeva.ea")
     @DisplayName("Проверка невалидного номера карты")
     @Test
@@ -87,7 +92,7 @@ public class PayoutCardPostNegativeTest extends Base {
         dataModel.setDescription("Заказ №74");
 
 
-        DataResponseNegativeModel responseNoModel = given(spec)
+        DataResponseNegativeModel responseNoModel = given(spec5)
                 .body(dataModel)
                 .when()
                 .post()
@@ -100,6 +105,8 @@ public class PayoutCardPostNegativeTest extends Base {
 
 
     }
+
+    @Feature("Негативные тесты")
     @Owner("samigullaeva.ea")
     @DisplayName("Проверка текста ошибки при отправке невалидного номера карты")
     @Test
@@ -133,7 +140,7 @@ public class PayoutCardPostNegativeTest extends Base {
         dataModel.setDescription("Заказ №74");
 
 
-        ErrorModel errorModel = given(spec)
+        ErrorModel errorModel = given(spec6)
                 .body(dataModel)
                 .when()
                 .post()
@@ -148,6 +155,8 @@ public class PayoutCardPostNegativeTest extends Base {
 
 
     }
+
+    @Feature("Негативные тесты")
     @Owner("samigullaeva.ea")
     @DisplayName("Проверка ввода невалидного года Expiry_year")
     @Test
@@ -180,7 +189,7 @@ public class PayoutCardPostNegativeTest extends Base {
         dataModel.setDescription("Заказ №74");
 
 
-        ErrorModel errorModel = given(spec)
+        ErrorModel errorModel = given(spec7)
                 .body(dataModel)
                 .when()
                 .post()

@@ -1,0 +1,1784 @@
+1Request URI:	https://api.yookassa.ru/v3/payments
+?Headers:		Idempotence-Key=84e01c0f-b8ba-456a-a678-6af873038dc1
+e				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+				Accept=*/*
+"				Content-Type=application/json
+Body:			<none>
+HTTP/1.1 200 
+Server: nginx
+$Date: Thu, 04 Apr 2024 15:23:37 GMT
+Content-Type: application/json
+Connection: close
+,Strict-Transport-Security: max-age=15768000
+
+{
+    "type": "list",
+;    "next_cursor": "2da087da-000f-5000-a000-175fc3bf6194",
+    "items": [
+
+        {
+:            "id": "2da0d93f-000f-5000-9000-1107b283d29f",
+"            "status": "canceled",
+            "amount": {
+#                "value": "150.00",
+"                "currency": "RUB"
+            },
+/            "description": "Заказ №74",
+            "recipient": {
+(                "account_id": "359240",
+(                "gateway_id": "2215148"
+            },
+             "payment_method": {
+%                "type": "bank_card",
+>                "id": "2da0d93f-000f-5000-9000-1107b283d29f",
+                 "saved": false,
+,                "title": "Bank card *4543",
+                "card": {
+(                    "first6": "555555",
+%                    "last4": "4543",
++                    "expiry_year": "2020",
+*                    "expiry_month": "01",
+/                    "card_type": "MasterCard",
+&                    "card_product": {
+$                        "code": "E"
+                    },
++                    "issuer_country": "US"
+                }
+            },
+6            "created_at": "2024-04-04T15:21:35.252Z",
+            "test": true,
+            "paid": false,
+!            "refundable": false,
+            "metadata": {
+                
+            },
+&            "cancellation_details": {
+,                "party": "payment_network",
+)                "reason": "card_expired"
+            },
+'            "authorization_details": {
+*                "rrn": "764690069163811",
+'                "auth_code": "545805",
+$                "three_d_secure": {
+&                    "applied": false,
+/                    "method_completed": false,
+1                    "challenge_completed": false
+                }
+            }
+        },
+
+        {
+:            "id": "2da0d93d-000f-5000-9000-1429bd7223bf",
+"            "status": "canceled",
+            "amount": {
+#                "value": "150.00",
+"                "currency": "RUB"
+            },
+/            "description": "Заказ №74",
+            "recipient": {
+(                "account_id": "359240",
+(                "gateway_id": "2215148"
+            },
+             "payment_method": {
+%                "type": "bank_card",
+>                "id": "2da0d93d-000f-5000-9000-1429bd7223bf",
+                 "saved": false,
+,                "title": "Bank card *4618",
+                "card": {
+(                    "first6": "555555",
+%                    "last4": "4618",
++                    "expiry_year": "2020",
+*                    "expiry_month": "01",
+/                    "card_type": "MasterCard",
+&                    "card_product": {
+$                        "code": "E"
+                    },
++                    "issuer_country": "US"
+                }
+            },
+6            "created_at": "2024-04-04T15:21:33.763Z",
+            "test": true,
+            "paid": false,
+!            "refundable": false,
+            "metadata": {
+                
+            },
+&            "cancellation_details": {
+,                "party": "payment_network",
+0                "reason": "invalid_card_number"
+            },
+'            "authorization_details": {
+*                "rrn": "615523840381615",
+'                "auth_code": "670993",
+$                "three_d_secure": {
+&                    "applied": false,
+/                    "method_completed": false,
+1                    "challenge_completed": false
+                }
+            }
+        },
+
+        {
+:            "id": "2da0d8b3-000f-5000-9000-112a863f81fa",
+-            "status": "waiting_for_capture",
+            "amount": {
+#                "value": "150.00",
+"                "currency": "RUB"
+            },
+/            "description": "Заказ №74",
+            "recipient": {
+(                "account_id": "359240",
+(                "gateway_id": "2215148"
+            },
+             "payment_method": {
+%                "type": "bank_card",
+>                "id": "2da0d8b3-000f-5000-9000-112a863f81fa",
+                 "saved": false,
+,                "title": "Bank card *4444",
+                "card": {
+(                    "first6": "555555",
+%                    "last4": "4444",
++                    "expiry_year": "2020",
+*                    "expiry_month": "01",
+/                    "card_type": "MasterCard",
+&                    "card_product": {
+$                        "code": "E"
+                    },
++                    "issuer_country": "US"
+                }
+            },
+6            "created_at": "2024-04-04T15:19:15.195Z",
+6            "expires_at": "2024-04-11T15:19:15.671Z",
+            "test": true,
+            "paid": true,
+!            "refundable": false,
+            "metadata": {
+                
+            },
+'            "authorization_details": {
+*                "rrn": "694869658408856",
+'                "auth_code": "293284",
+$                "three_d_secure": {
+&                    "applied": false,
+/                    "method_completed": false,
+1                    "challenge_completed": false
+                }
+            }
+        },
+
+        {
+:            "id": "2da0d8ab-000f-5000-8000-1e412a92b743",
+"            "status": "canceled",
+            "amount": {
+#                "value": "150.00",
+"                "currency": "RUB"
+            },
+/            "description": "Заказ №74",
+            "recipient": {
+(                "account_id": "359240",
+(                "gateway_id": "2215148"
+            },
+             "payment_method": {
+%                "type": "bank_card",
+>                "id": "2da0d8ab-000f-5000-8000-1e412a92b743",
+                 "saved": false,
+,                "title": "Bank card *4543",
+                "card": {
+(                    "first6": "555555",
+%                    "last4": "4543",
++                    "expiry_year": "2020",
+*                    "expiry_month": "01",
+/                    "card_type": "MasterCard",
+&                    "card_product": {
+$                        "code": "E"
+                    },
++                    "issuer_country": "US"
+                }
+            },
+6            "created_at": "2024-04-04T15:19:07.512Z",
+            "test": true,
+            "paid": false,
+!            "refundable": false,
+            "metadata": {
+                
+            },
+&            "cancellation_details": {
+,                "party": "payment_network",
+)                "reason": "card_expired"
+            },
+'            "authorization_details": {
+*                "rrn": "220986940862713",
+'                "auth_code": "365962",
+$                "three_d_secure": {
+&                    "applied": false,
+/                    "method_completed": false,
+1                    "challenge_completed": false
+                }
+            }
+        },
+
+        {
+:            "id": "2da0d895-000f-5000-9000-1ebf44933123",
+-            "status": "waiting_for_capture",
+            "amount": {
+#                "value": "150.00",
+"                "currency": "RUB"
+            },
+/            "description": "Заказ №74",
+            "recipient": {
+(                "account_id": "359240",
+(                "gateway_id": "2215148"
+            },
+             "payment_method": {
+%                "type": "bank_card",
+>                "id": "2da0d895-000f-5000-9000-1ebf44933123",
+                 "saved": false,
+,                "title": "Bank card *4444",
+                "card": {
+(                    "first6": "555555",
+%                    "last4": "4444",
++                    "expiry_year": "2020",
+*                    "expiry_month": "01",
+/                    "card_type": "MasterCard",
+&                    "card_product": {
+$                        "code": "E"
+                    },
++                    "issuer_country": "US"
+                }
+            },
+6            "created_at": "2024-04-04T15:18:45.117Z",
+6            "expires_at": "2024-04-11T15:18:45.881Z",
+            "test": true,
+            "paid": true,
+!            "refundable": false,
+            "metadata": {
+                
+            },
+'            "authorization_details": {
+*                "rrn": "434412589794452",
+'                "auth_code": "533194",
+$                "three_d_secure": {
+&                    "applied": false,
+/                    "method_completed": false,
+1                    "challenge_completed": false
+                }
+            }
+        },
+
+        {
+:            "id": "2da0c42a-000f-5000-a000-1197aa785606",
+-            "status": "waiting_for_capture",
+            "amount": {
+#                "value": "150.00",
+"                "currency": "RUB"
+            },
+/            "description": "Заказ №74",
+            "recipient": {
+(                "account_id": "359240",
+(                "gateway_id": "2215148"
+            },
+             "payment_method": {
+%                "type": "bank_card",
+>                "id": "2da0c42a-000f-5000-a000-1197aa785606",
+                 "saved": false,
+,                "title": "Bank card *4444",
+                "card": {
+(                    "first6": "555555",
+%                    "last4": "4444",
++                    "expiry_year": "2020",
+*                    "expiry_month": "01",
+/                    "card_type": "MasterCard",
+&                    "card_product": {
+$                        "code": "E"
+                    },
++                    "issuer_country": "US"
+                }
+            },
+6            "created_at": "2024-04-04T13:51:38.029Z",
+6            "expires_at": "2024-04-11T13:51:38.745Z",
+            "test": true,
+            "paid": true,
+!            "refundable": false,
+            "metadata": {
+                
+            },
+'            "authorization_details": {
+*                "rrn": "771490115823922",
+'                "auth_code": "293515",
+$                "three_d_secure": {
+&                    "applied": false,
+/                    "method_completed": false,
+1                    "challenge_completed": false
+                }
+            }
+        },
+
+        {
+:            "id": "2da0975d-000f-5000-a000-19e68444c0bd",
+-            "status": "waiting_for_capture",
+            "amount": {
+#                "value": "150.00",
+"                "currency": "RUB"
+            },
+/            "description": "Заказ №74",
+            "recipient": {
+(                "account_id": "359240",
+(                "gateway_id": "2215148"
+            },
+             "payment_method": {
+%                "type": "bank_card",
+>                "id": "2da0975d-000f-5000-a000-19e68444c0bd",
+                 "saved": false,
+,                "title": "Bank card *4444",
+                "card": {
+(                    "first6": "555555",
+%                    "last4": "4444",
++                    "expiry_year": "2020",
+*                    "expiry_month": "01",
+/                    "card_type": "MasterCard",
+&                    "card_product": {
+$                        "code": "E"
+                    },
++                    "issuer_country": "US"
+                }
+            },
+6            "created_at": "2024-04-04T10:40:29.296Z",
+6            "expires_at": "2024-04-11T10:40:29.798Z",
+            "test": true,
+            "paid": true,
+!            "refundable": false,
+            "metadata": {
+                
+            },
+'            "authorization_details": {
+*                "rrn": "297866494692573",
+'                "auth_code": "703825",
+$                "three_d_secure": {
+&                    "applied": false,
+/                    "method_completed": false,
+1                    "challenge_completed": false
+                }
+            }
+        },
+
+        {
+:            "id": "2da09627-000f-5000-8000-1758e66c21e0",
+"            "status": "canceled",
+            "amount": {
+#                "value": "150.00",
+"                "currency": "RUB"
+            },
+/            "description": "Заказ №74",
+            "recipient": {
+(                "account_id": "359240",
+(                "gateway_id": "2215148"
+            },
+             "payment_method": {
+%                "type": "bank_card",
+>                "id": "2da09627-000f-5000-8000-1758e66c21e0",
+                 "saved": false,
+,                "title": "Bank card *4543",
+                "card": {
+(                    "first6": "555555",
+%                    "last4": "4543",
++                    "expiry_year": "2020",
+*                    "expiry_month": "01",
+/                    "card_type": "MasterCard",
+&                    "card_product": {
+$                        "code": "E"
+                    },
++                    "issuer_country": "US"
+                }
+            },
+6            "created_at": "2024-04-04T10:35:19.170Z",
+            "test": true,
+            "paid": false,
+!            "refundable": false,
+            "metadata": {
+                
+            },
+&            "cancellation_details": {
+,                "party": "payment_network",
+)                "reason": "card_expired"
+            },
+'            "authorization_details": {
+*                "rrn": "292636678414509",
+'                "auth_code": "624728",
+$                "three_d_secure": {
+&                    "applied": false,
+/                    "method_completed": false,
+1                    "challenge_completed": false
+                }
+            }
+        },
+
+        {
+:            "id": "2da08dfc-000f-5000-8000-1b6e3f8c7c15",
+-            "status": "waiting_for_capture",
+            "amount": {
+#                "value": "150.00",
+"                "currency": "RUB"
+            },
+/            "description": "Заказ №74",
+            "recipient": {
+(                "account_id": "359240",
+(                "gateway_id": "2215148"
+            },
+             "payment_method": {
+%                "type": "bank_card",
+>                "id": "2da08dfc-000f-5000-8000-1b6e3f8c7c15",
+                 "saved": false,
+,                "title": "Bank card *2987",
+                "card": {
+(                    "first6": "220247",
+%                    "last4": "2987",
++                    "expiry_year": "2020",
+*                    "expiry_month": "01",
++                    "card_type": "Unknown"
+                }
+            },
+6            "created_at": "2024-04-04T10:00:28.931Z",
+6            "expires_at": "2024-04-11T10:00:29.425Z",
+            "test": true,
+            "paid": true,
+!            "refundable": false,
+            "metadata": {
+                
+            },
+'            "authorization_details": {
+*                "rrn": "195130613751393",
+'                "auth_code": "825029",
+$                "three_d_secure": {
+&                    "applied": false,
+/                    "method_completed": false,
+1                    "challenge_completed": false
+                }
+            }
+        },
+
+        {
+:            "id": "2da087ed-000f-5000-a000-1d684ae13d49",
+-            "status": "waiting_for_capture",
+            "amount": {
+#                "value": "150.00",
+"                "currency": "RUB"
+            },
+/            "description": "Заказ №74",
+            "recipient": {
+(                "account_id": "359240",
+(                "gateway_id": "2215148"
+            },
+             "payment_method": {
+%                "type": "bank_card",
+>                "id": "2da087ed-000f-5000-a000-1d684ae13d49",
+                 "saved": false,
+,                "title": "Bank card *4444",
+                "card": {
+(                    "first6": "555555",
+%                    "last4": "4444",
++                    "expiry_year": "2020",
+*                    "expiry_month": "01",
+/                    "card_type": "MasterCard",
+&                    "card_product": {
+$                        "code": "E"
+                    },
++                    "issuer_country": "US"
+                }
+            },
+6            "created_at": "2024-04-04T09:34:37.744Z",
+6            "expires_at": "2024-04-11T09:34:38.504Z",
+            "test": true,
+            "paid": true,
+!            "refundable": false,
+            "metadata": {
+                
+            },
+'            "authorization_details": {
+*                "rrn": "368871837350190",
+'                "auth_code": "686236",
+$                "three_d_secure": {
+&                    "applied": false,
+/                    "method_completed": false,
+1                    "challenge_completed": false
+                }
+            }
+
+        }
+    ]
+}
+VRequest URI:	https://api.yookassa.ru/v3/payments/2d9cc60d-000f-5000-9000-131c0b967024
+?Headers:		Idempotence-Key=84e01c0f-b8ba-456a-a678-6af873038dc1
+e				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+				Accept=*/*
+"				Content-Type=application/json
+Body:			<none>
+HTTP/1.1 200 
+Server: nginx
+$Date: Thu, 04 Apr 2024 15:23:38 GMT
+-Content-Type: application/json;charset=UTF-8
+Content-Length: 1070
+Connection: keep-alive
+Keep-Alive: timeout=12
+�Signature: v1 2da0d9ba 1 MGQCMEm8fesvh+3z/GrX8UHWGHRcLtj53ISqD3lsx0Q5FCdRJc/+TRopdvoeHQ6D3gKvJQIwVjzq69csMQcNNkWASyDXVqC8jaZAUdrei606AyYB/YBDncQechc20+s/MtWDAJvX
+,Strict-Transport-Security: max-age=15768000
+
+{
+2    "id": "2d9cc60d-000f-5000-9000-131c0b967024",
+%    "status": "waiting_for_capture",
+    "amount": {
+        "value": "150.00",
+        "currency": "RUB"
+    },
+'    "description": "Заказ №74",
+    "recipient": {
+         "account_id": "359240",
+         "gateway_id": "2215148"
+    },
+    "payment_method": {
+        "type": "bank_card",
+6        "id": "2d9cc60d-000f-5000-9000-131c0b967024",
+        "saved": false,
+$        "title": "Bank card *4444",
+        "card": {
+             "first6": "555555",
+            "last4": "4444",
+#            "expiry_year": "2020",
+"            "expiry_month": "01",
+'            "card_type": "MasterCard",
+            "card_product": {
+                "code": "E"
+            },
+#            "issuer_country": "US"
+
+        }
+    },
+.    "created_at": "2024-04-01T13:10:37.543Z",
+.    "expires_at": "2024-04-08T13:10:38.087Z",
+    "test": true,
+    "paid": true,
+    "refundable": false,
+    "metadata": {
+	        
+    },
+    "authorization_details": {
+"        "rrn": "744835168061300",
+        "auth_code": "387288",
+        "three_d_secure": {
+            "applied": false,
+'            "method_completed": false,
+)            "challenge_completed": false
+
+        }
+    }
+}
+1Request URI:	https://api.yookassa.ru/v3/payments
+?Headers:		Idempotence-Key=4c443b8d-8591-435a-ac0f-bc65dd0e4dc8
+e				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+				Accept=*/*
+"				Content-Type=application/json
+Body:
+{
+    "amount": {
+        "value": "150.00",
+        "currency": "RUB"
+    },
+    "payment_method_data": {
+        "type": "bank_card",
+        "card": {
++            "cardholder": "MR CARDHOLDER",
+            "csc": "213",
+"            "expiry_month": "01",
+#            "expiry_year": "2020",
+            "number": "32558"
+
+        }
+    },
+    "confirmation": {
+        "type": "redirect",
+;        "return_url": "https://www.example.com/return_url"
+    },
+&    "description": "Заказ №74"
+}
+HTTP/1.1 400 
+Server: nginx
+$Date: Thu, 04 Apr 2024 15:23:38 GMT
+-Content-Type: application/json;charset=UTF-8
+Content-Length: 282
+Connection: keep-alive
+Keep-Alive: timeout=12
+�Signature: v1 2da0d9ba 1 MGQCMHDtdcynnEck78if/MQGhkhoif059k3CSM4qUoQSKLX6P4xqdZy8mqee0xVDlkVAZwIwU6mUIEcHinGIcUPDMDqQh+QGNV90H1HijvjGIiCNpLNSWfXjDayaFIOBWSjnq1TD
+
+{
+    "type": "error",
+2    "id": "b3484ab0-c71b-42d8-85b1-8a739039cf79",
+    "code": "invalid_request",
+�    "description": "Error in the bank card number. Specify a valid number. You can validate the number using the Luhn algorithm.",
+3    "parameter": "payment_method_data.card.number"
+}
+1Request URI:	https://api.yookassa.ru/v3/payments
+?Headers:		Idempotence-Key=8c37d8dc-65ab-495b-af11-74f4f8e2496a
+e				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+				Accept=*/*
+"				Content-Type=application/json
+Body:
+{
+    "amount": {
+        "value": "150.00",
+        "currency": "RUB"
+    },
+    "payment_method_data": {
+        "type": "bank_card",
+        "card": {
++            "cardholder": "MR CARDHOLDER",
+            "csc": "213",
+"            "expiry_month": "01",
+#            "expiry_year": "2020",
+)            "number": "5555555555554618"
+
+        }
+    },
+    "confirmation": {
+        "type": "redirect",
+;        "return_url": "https://www.example.com/return_url"
+    },
+&    "description": "Заказ №74"
+}
+HTTP/1.1 200 
+Server: nginx
+$Date: Thu, 04 Apr 2024 15:23:41 GMT
+-Content-Type: application/json;charset=UTF-8
+Content-Length: 1119
+Connection: keep-alive
+Keep-Alive: timeout=12
+�Signature: v1 2da0d9bd 1 MGQCMDXIGlocemGmn8GtvpEAYLZjhRjzO/tRdBfx83sXXWberp8mSEtazTi+GeW4joun5QIwRn9wSHFaSeEQX13dxuummAp2CuZZQNBzPXYcGecnU8IaIlbOvLEvkiYGsfvLGbl3
+,Strict-Transport-Security: max-age=15768000
+
+{
+2    "id": "2da0d9bb-000f-5000-9000-18abaaf5d091",
+    "status": "canceled",
+    "amount": {
+        "value": "150.00",
+        "currency": "RUB"
+    },
+'    "description": "Заказ №74",
+    "recipient": {
+         "account_id": "359240",
+         "gateway_id": "2215148"
+    },
+    "payment_method": {
+        "type": "bank_card",
+6        "id": "2da0d9bb-000f-5000-9000-18abaaf5d091",
+        "saved": false,
+$        "title": "Bank card *4618",
+        "card": {
+             "first6": "555555",
+            "last4": "4618",
+#            "expiry_year": "2020",
+"            "expiry_month": "01",
+'            "card_type": "MasterCard",
+            "card_product": {
+                "code": "E"
+            },
+#            "issuer_country": "US"
+
+        }
+    },
+.    "created_at": "2024-04-04T15:23:39.498Z",
+    "test": true,
+    "paid": false,
+    "refundable": false,
+    "metadata": {
+	        
+    },
+    "cancellation_details": {
+$        "party": "payment_network",
+(        "reason": "invalid_card_number"
+    },
+    "authorization_details": {
+"        "rrn": "288649985008753",
+        "auth_code": "273329",
+        "three_d_secure": {
+            "applied": false,
+'            "method_completed": false,
+)            "challenge_completed": false
+
+        }
+    }
+}
+1Request URI:	https://api.yookassa.ru/v3/payments
+?Headers:		Idempotence-Key=32c13ca4-4e6c-4797-bc59-8331a8f890fb
+e				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+				Accept=*/*
+"				Content-Type=application/json
+Body:
+{
+    "amount": {
+        "value": "150.00",
+        "currency": "RUB"
+    },
+    "payment_method_data": {
+        "type": "bank_card",
+        "card": {
++            "cardholder": "MR CARDHOLDER",
+            "csc": "213",
+"            "expiry_month": "01",
+#            "expiry_year": "2020",
+)            "number": "5555555555554543"
+
+        }
+    },
+    "confirmation": {
+        "type": "redirect",
+;        "return_url": "https://www.example.com/return_url"
+    },
+&    "description": "Заказ №74"
+}
+HTTP/1.1 200 
+Server: nginx
+$Date: Thu, 04 Apr 2024 15:23:43 GMT
+-Content-Type: application/json;charset=UTF-8
+Content-Length: 1112
+Connection: keep-alive
+Keep-Alive: timeout=12
+�Signature: v1 2da0d9bf 1 MGQCMDrQoFGxluSUruRu+f1bctdYXLnNnPtY7CqKJyX3Y/IWsf7GhAYMqQOdcTsjtb41DgIwGg773oNY0x0ODFHUtsjkTfTKr1qCe/fD6Cgv1t7+mtKpoPRNMTwH/Ve7OcglrcjS
+,Strict-Transport-Security: max-age=15768000
+
+{
+2    "id": "2da0d9bd-000f-5000-a000-1dd2fe412a8b",
+    "status": "canceled",
+    "amount": {
+        "value": "150.00",
+        "currency": "RUB"
+    },
+'    "description": "Заказ №74",
+    "recipient": {
+         "account_id": "359240",
+         "gateway_id": "2215148"
+    },
+    "payment_method": {
+        "type": "bank_card",
+6        "id": "2da0d9bd-000f-5000-a000-1dd2fe412a8b",
+        "saved": false,
+$        "title": "Bank card *4543",
+        "card": {
+             "first6": "555555",
+            "last4": "4543",
+#            "expiry_year": "2020",
+"            "expiry_month": "01",
+'            "card_type": "MasterCard",
+            "card_product": {
+                "code": "E"
+            },
+#            "issuer_country": "US"
+
+        }
+    },
+.    "created_at": "2024-04-04T15:23:41.829Z",
+    "test": true,
+    "paid": false,
+    "refundable": false,
+    "metadata": {
+	        
+    },
+    "cancellation_details": {
+$        "party": "payment_network",
+!        "reason": "card_expired"
+    },
+    "authorization_details": {
+"        "rrn": "632471402686902",
+        "auth_code": "853628",
+        "three_d_secure": {
+            "applied": false,
+'            "method_completed": false,
+)            "challenge_completed": false
+
+        }
+    }
+}
+1Request URI:	https://api.yookassa.ru/v3/payments
+?Headers:		Idempotence-Key=7ec7b321-6c93-4ff9-b3e7-dee0cf3534c3
+e				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+				Accept=*/*
+"				Content-Type=application/json
+Body:
+{
+    "amount": {
+        "value": "150.00",
+        "currency": "RUB"
+    },
+    "payment_method_data": {
+        "type": "bank_card",
+        "card": {
++            "cardholder": "MR CARDHOLDER",
+            "csc": "213",
+"            "expiry_month": "01",
+!            "expiry_year": "20",
+)            "number": "2202202212312379"
+
+        }
+    },
+    "confirmation": {
+        "type": "redirect",
+;        "return_url": "https://www.example.com/return_url"
+    },
+&    "description": "Заказ №74"
+}
+HTTP/1.1 400 
+Server: nginx
+$Date: Thu, 04 Apr 2024 15:23:45 GMT
+-Content-Type: application/json;charset=UTF-8
+Content-Length: 232
+Connection: keep-alive
+Keep-Alive: timeout=12
+�Signature: v1 2da0d9c1 1 MGQCMGLZ6y0Z/6NZUPvKKR7/L6rz9ax/e9bc+RelQbSwiFGTVpZDZYMqX3LeEH2ZfzpJ1QIwe+DT/JIY6cecHWZFkvxWxIRsGgaU5SmrW7MkxwkxMf1J4woTw9tn2tD0JsJ2FyE2
+
+{
+    "type": "error",
+2    "id": "204f6a2a-dc3a-46d7-a8f4-06b6fafa7e81",
+    "code": "invalid_request",
+L    "description": "Card expiry year is illegal. Must be a 4-digit number",
+8    "parameter": "payment_method_data.card.expiry_year"
+}
+
+	1Request URI:	https://api.yookassa.ru/v3/payments
+
+	?Headers:		Idempotence-Key=84e01c0f-b8ba-456a-a678-6af873038dc1
+
+	e				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+
+					Accept=*/*
+
+	"				Content-Type=application/json
+
+	Body:
+
+	{
+
+	    "amount": {
+
+	        "value": "150.00",
+
+	        "currency": "RUB"
+
+	    },
+
+	    "payment_method_data": {
+
+	        "type": "bank_card",
+
+	        "card": {
+
+	+            "cardholder": "MR CARDHOLDER",
+
+	            "csc": "213",
+
+	"            "expiry_month": "01",
+
+	#            "expiry_year": "2020",
+
+	)            "number": "2202474301322987"
+
+	
+        }
+
+	    },
+
+	    "confirmation": {
+
+	        "type": "redirect",
+
+	;        "return_url": "https://www.example.com/return_url"
+
+	    },
+
+	&    "description": "Заказ №74"
+
+	}
+
+	HTTP/1.1 200 
+
+	Server: nginx
+
+	$Date: Thu, 04 Apr 2024 15:23:46 GMT
+
+	-Content-Type: application/json;charset=UTF-8
+
+	Content-Length: 977
+
+	Connection: keep-alive
+
+	Keep-Alive: timeout=12
+
+	�Signature: v1 2da0d9c2 1 MGQCMBOmkigBjbm6CnHSL45uNW/2efOeNSdGWF4mziu2XciQX5qFOxWs8w3/zyrPunSU8gIwA7/uIIpiqURZQN9qMgKb91vTZLOz5BS8/U0RHGX+fika2xQeNDNnT/eBl4Jm4EPy
+
+	,Strict-Transport-Security: max-age=15768000
+
+	
+
+	{
+
+	2    "id": "2da0d9c1-000f-5000-8000-1f9e2e73a7a0",
+
+	%    "status": "waiting_for_capture",
+
+	    "amount": {
+
+	        "value": "150.00",
+
+	        "currency": "RUB"
+
+	    },
+
+	'    "description": "Заказ №74",
+
+	    "recipient": {
+
+	         "account_id": "359240",
+
+	         "gateway_id": "2215148"
+
+	    },
+
+	    "payment_method": {
+
+	        "type": "bank_card",
+
+	6        "id": "2da0d9c1-000f-5000-8000-1f9e2e73a7a0",
+
+	        "saved": false,
+
+	$        "title": "Bank card *2987",
+
+	        "card": {
+
+	             "first6": "220247",
+
+	            "last4": "2987",
+
+	#            "expiry_year": "2020",
+
+	"            "expiry_month": "01",
+
+	            "card_type": "Mir"
+
+	
+        }
+
+	    },
+
+	.    "created_at": "2024-04-04T15:23:45.598Z",
+
+	.    "expires_at": "2024-04-11T15:23:46.036Z",
+
+	    "test": true,
+
+	    "paid": true,
+
+	    "refundable": false,
+
+	    "metadata": {
+
+		        
+
+	    },
+
+	    "authorization_details": {
+
+	"        "rrn": "644168332505691",
+
+	        "auth_code": "274388",
+
+	        "three_d_secure": {
+
+	            "applied": false,
+
+	'            "method_completed": false,
+
+	)            "challenge_completed": false
+
+	
+        }
+
+	    }
+
+	}
+
+1Request URI:	https://api.yookassa.ru/v3/payments
+
+?Headers:		Idempotence-Key=84e01c0f-b8ba-456a-a678-6af873038dc1
+
+e				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+
+				Accept=*/*
+
+"				Content-Type=application/json
+
+Body:
+
+{
+
+    "amount": {
+
+        "value": "150.00",
+
+        "currency": "RUB"
+
+    },
+
+    "payment_method_data": {
+
+        "type": "bank_card",
+
+        "card": {
+
++            "cardholder": "MR CARDHOLDER",
+
+            "csc": "213",
+
+"            "expiry_month": "01",
+
+#            "expiry_year": "2020",
+
+)            "number": "2202474301322987"
+
+
+        }
+
+    },
+
+    "confirmation": {
+
+        "type": "redirect",
+
+;        "return_url": "https://www.example.com/return_url"
+
+    },
+
+&    "description": "Заказ №74"
+
+}
+
+HTTP/1.1 200 
+
+Server: nginx
+
+$Date: Thu, 04 Apr 2024 15:23:46 GMT
+
+-Content-Type: application/json;charset=UTF-8
+
+Content-Length: 977
+
+Connection: keep-alive
+
+Keep-Alive: timeout=12
+
+�Signature: v1 2da0d9c2 1 MGQCMBN1EtKSUJSWpUVOVhw8DG/jEv4bftAA3dyxNGHjAtyamXEWxxjHL0IjHb859rviXwIwRHbziceeGemaxTgpkIYNAPod0fmho6VayAMQfw3Qsnj5sCMbTDtA9pUVBfrSi4wx
+
+,Strict-Transport-Security: max-age=15768000
+
+
+
+{
+
+2    "id": "2da0d9c1-000f-5000-8000-1f9e2e73a7a0",
+
+%    "status": "waiting_for_capture",
+
+    "amount": {
+
+        "value": "150.00",
+
+        "currency": "RUB"
+
+    },
+
+'    "description": "Заказ №74",
+
+    "recipient": {
+
+         "account_id": "359240",
+
+         "gateway_id": "2215148"
+
+    },
+
+    "payment_method": {
+
+        "type": "bank_card",
+
+6        "id": "2da0d9c1-000f-5000-8000-1f9e2e73a7a0",
+
+        "saved": false,
+
+$        "title": "Bank card *2987",
+
+        "card": {
+
+             "first6": "220247",
+
+            "last4": "2987",
+
+#            "expiry_year": "2020",
+
+"            "expiry_month": "01",
+
+            "card_type": "Mir"
+
+
+        }
+
+    },
+
+.    "created_at": "2024-04-04T15:23:45.598Z",
+
+.    "expires_at": "2024-04-11T15:23:46.036Z",
+
+    "test": true,
+
+    "paid": true,
+
+    "refundable": false,
+
+    "metadata": {
+
+	        
+
+    },
+
+    "authorization_details": {
+
+"        "rrn": "644168332505691",
+
+        "auth_code": "274388",
+
+        "three_d_secure": {
+
+            "applied": false,
+
+'            "method_completed": false,
+
+)            "challenge_completed": false
+
+
+        }
+
+    }
+
+}
+
+1Request URI:	https://api.yookassa.ru/v3/payments
+
+?Headers:		Idempotence-Key=84e01c0f-b8ba-456a-a678-6af873038dc1
+
+e				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+
+				Accept=*/*
+
+"				Content-Type=application/json
+
+Body:
+
+{
+
+    "amount": {
+
+        "value": "150.00",
+
+        "currency": "RUB"
+
+    },
+
+    "payment_method_data": {
+
+        "type": "bank_card",
+
+        "card": {
+
++            "cardholder": "MR CARDHOLDER",
+
+            "csc": "213",
+
+"            "expiry_month": "01",
+
+#            "expiry_year": "2020",
+
+)            "number": "2202474301322987"
+
+
+        }
+
+    },
+
+    "confirmation": {
+
+        "type": "redirect",
+
+;        "return_url": "https://www.example.com/return_url"
+
+    },
+
+&    "description": "Заказ №74"
+
+}
+
+HTTP/1.1 200 
+
+Server: nginx
+
+$Date: Thu, 04 Apr 2024 15:23:46 GMT
+
+-Content-Type: application/json;charset=UTF-8
+
+Content-Length: 977
+
+Connection: keep-alive
+
+Keep-Alive: timeout=12
+
+�Signature: v1 2da0d9c2 1 MGQCMHG2tik64Dcz3s6XqazS1pT34YY8JyIZLUCArRecjEzKl26g+c363sPHLL0sZ6++BgIwcsUbGHJTtGTYdVrastDNvuuhtULS42X08ynN1uvYdNHNcQbzFfajXujpNsJLG35r
+
+,Strict-Transport-Security: max-age=15768000
+
+
+
+{
+
+2    "id": "2da0d9c1-000f-5000-8000-1f9e2e73a7a0",
+
+%    "status": "waiting_for_capture",
+
+    "amount": {
+
+        "value": "150.00",
+
+        "currency": "RUB"
+
+    },
+
+'    "description": "Заказ №74",
+
+    "recipient": {
+
+         "account_id": "359240",
+
+         "gateway_id": "2215148"
+
+    },
+
+    "payment_method": {
+
+        "type": "bank_card",
+
+6        "id": "2da0d9c1-000f-5000-8000-1f9e2e73a7a0",
+
+        "saved": false,
+
+$        "title": "Bank card *2987",
+
+        "card": {
+
+             "first6": "220247",
+
+            "last4": "2987",
+
+#            "expiry_year": "2020",
+
+"            "expiry_month": "01",
+
+            "card_type": "Mir"
+
+
+        }
+
+    },
+
+.    "created_at": "2024-04-04T15:23:45.598Z",
+
+.    "expires_at": "2024-04-11T15:23:46.036Z",
+
+    "test": true,
+
+    "paid": true,
+
+    "refundable": false,
+
+    "metadata": {
+
+	        
+
+    },
+
+    "authorization_details": {
+
+"        "rrn": "644168332505691",
+
+        "auth_code": "274388",
+
+        "three_d_secure": {
+
+            "applied": false,
+
+'            "method_completed": false,
+
+)            "challenge_completed": false
+
+
+        }
+
+    }
+
+}
+1Request URI:	https://api.yookassa.ru/v3/payments
+?Headers:		Idempotence-Key=d6d22239-b001-4e1b-92d2-290d12fdb2ba
+e				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+				Accept=*/*
+"				Content-Type=application/json
+Body:
+{
+    "amount": {
+        "value": "150.00",
+        "currency": "RUB"
+    },
+    "payment_method_data": {
+        "type": "bank_card",
+        "card": {
++            "cardholder": "MR CARDHOLDER",
+            "csc": "213",
+"            "expiry_month": "01",
+#            "expiry_year": "2020",
+)            "number": "5555555555554444"
+
+        }
+    },
+    "confirmation": {
+        "type": "redirect",
+;        "return_url": "https://www.example.com/return_url"
+    },
+&    "description": "Заказ №74"
+}
+HTTP/1.1 200 
+Server: nginx
+$Date: Thu, 04 Apr 2024 15:23:48 GMT
+-Content-Type: application/json;charset=UTF-8
+Content-Length: 1070
+Connection: keep-alive
+Keep-Alive: timeout=12
+�Signature: v1 2da0d9c4 1 MGQCMDQCc/FBlo5Hcdlp71O9wwvVPv6V2XJMPrDFzUw/YQbfw57Z7EqZ8Ic+subDWO9HAAIwHY//BI+sf3MHyGdw8oJRqMX+0ov4mxZKiRpnzw7TORSvFnNBkrYFlpiwHMRoLjq0
+,Strict-Transport-Security: max-age=15768000
+
+{
+2    "id": "2da0d9c3-000f-5000-a000-14fd3cd33ddd",
+%    "status": "waiting_for_capture",
+    "amount": {
+        "value": "150.00",
+        "currency": "RUB"
+    },
+'    "description": "Заказ №74",
+    "recipient": {
+         "account_id": "359240",
+         "gateway_id": "2215148"
+    },
+    "payment_method": {
+        "type": "bank_card",
+6        "id": "2da0d9c3-000f-5000-a000-14fd3cd33ddd",
+        "saved": false,
+$        "title": "Bank card *4444",
+        "card": {
+             "first6": "555555",
+            "last4": "4444",
+#            "expiry_year": "2020",
+"            "expiry_month": "01",
+'            "card_type": "MasterCard",
+            "card_product": {
+                "code": "E"
+            },
+#            "issuer_country": "US"
+
+        }
+    },
+.    "created_at": "2024-04-04T15:23:47.271Z",
+.    "expires_at": "2024-04-11T15:23:48.109Z",
+    "test": true,
+    "paid": true,
+    "refundable": false,
+    "metadata": {
+	        
+    },
+    "authorization_details": {
+"        "rrn": "334283563786440",
+        "auth_code": "175968",
+        "three_d_secure": {
+            "applied": false,
+'            "method_completed": false,
+)            "challenge_completed": false
+
+        }
+    }
+}
+1Request URI:	https://api.yookassa.ru/v3/payments
+?Headers:		Idempotence-Key=84e01c0f-b8ba-456a-a678-6af873038dc1
+e				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+				Accept=*/*
+"				Content-Type=application/json
+Body:
+{
+    "amount": {
+        "value": "150.00",
+        "currency": "RUB"
+    },
+    "payment_method_data": {
+        "type": "bank_card",
+        "card": {
++            "cardholder": "MR CARDHOLDER",
+            "csc": "213",
+"            "expiry_month": "01",
+#            "expiry_year": "2020",
+)            "number": "5555555555554444"
+
+        }
+    },
+    "confirmation": {
+        "type": "redirect",
+;        "return_url": "https://www.example.com/return_url"
+    },
+&    "description": "Заказ №74"
+}
+HTTP/1.1 400 
+Server: nginx
+$Date: Thu, 04 Apr 2024 15:23:48 GMT
+-Content-Type: application/json;charset=UTF-8
+Content-Length: 292
+Connection: keep-alive
+Keep-Alive: timeout=12
+�Signature: v1 2da0d9c4 1 MGQCMA2gTV7UMNXLil0p58NoetRBuoZLTr3dS+EQbG+5ARRZXAtRGp+JmTr2icJwvefl2wIwcK9BepsD0SErIWrdTQK+1zbiRmpKWb5sFRGNDEjoKSbjFAIzw9H7v+eLiv70rs3s
+
+{
+    "type": "error",
+2    "id": "1cabcb9c-f991-4009-9b4e-23e36ccc1c55",
+    "code": "invalid_request",
+�    "description": "You've already used this idempotence key for another request within the past 24 hours. Repeat the request with another idempotence key",
+#    "parameter": "Idempotence-Key"
+}
+HTTP/1.1 400 
+Server: nginx
+$Date: Thu, 04 Apr 2024 15:23:48 GMT
+-Content-Type: application/json;charset=UTF-8
+Content-Length: 292
+Connection: keep-alive
+Keep-Alive: timeout=12
+�Signature: v1 2da0d9c4 1 MGQCMA2gTV7UMNXLil0p58NoetRBuoZLTr3dS+EQbG+5ARRZXAtRGp+JmTr2icJwvefl2wIwcK9BepsD0SErIWrdTQK+1zbiRmpKWb5sFRGNDEjoKSbjFAIzw9H7v+eLiv70rs3s
+
+{
+    "type": "error",
+2    "id": "1cabcb9c-f991-4009-9b4e-23e36ccc1c55",
+    "code": "invalid_request",
+�    "description": "You've already used this idempotence key for another request within the past 24 hours. Repeat the request with another idempotence key",
+#    "parameter": "Idempotence-Key"
+}
+1Request URI:	https://api.yookassa.ru/v3/payments
+?Headers:		Idempotence-Key=3b1a175f-d1a3-46f8-b48f-322471187f69
+e				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+				Accept=*/*
+"				Content-Type=application/json
+Body:
+{
+    "amount": {
+        "value": "150.00",
+        "currency": "RUB"
+    },
+    "payment_method_data": {
+        "type": "bank_card",
+        "card": {
++            "cardholder": "MR CARDHOLDER",
+            "csc": "213",
+"            "expiry_month": "01",
+#            "expiry_year": "2020",
+)            "number": "5555555555554444"
+
+        }
+    },
+    "confirmation": {
+        "type": "redirect",
+;        "return_url": "https://www.example.com/return_url"
+    },
+&    "description": "Заказ №74"
+}
+HTTP/1.1 200 
+Server: nginx
+$Date: Thu, 04 Apr 2024 15:23:49 GMT
+-Content-Type: application/json;charset=UTF-8
+Content-Length: 1070
+Connection: keep-alive
+Keep-Alive: timeout=12
+�Signature: v1 2da0d9c5 1 MGQCMFkwa0e7IonZN8guK2TMHC8IpYZ0Tdbp1LuZsYZ8XTfaq/iVE5WEen2ja3EV3FrtogIwYH1WyprHK93LLAriZY2gtA9NZjlukFhHHRUu0pEP/lROoHcKLAnmmnM7v8ezXzzI
+,Strict-Transport-Security: max-age=15768000
+
+{
+2    "id": "2da0d9c4-000f-5000-9000-182d544a85c5",
+%    "status": "waiting_for_capture",
+    "amount": {
+        "value": "150.00",
+        "currency": "RUB"
+    },
+'    "description": "Заказ №74",
+    "recipient": {
+         "account_id": "359240",
+         "gateway_id": "2215148"
+    },
+    "payment_method": {
+        "type": "bank_card",
+6        "id": "2da0d9c4-000f-5000-9000-182d544a85c5",
+        "saved": false,
+$        "title": "Bank card *4444",
+        "card": {
+             "first6": "555555",
+            "last4": "4444",
+#            "expiry_year": "2020",
+"            "expiry_month": "01",
+'            "card_type": "MasterCard",
+            "card_product": {
+                "code": "E"
+            },
+#            "issuer_country": "US"
+
+        }
+    },
+.    "created_at": "2024-04-04T15:23:48.994Z",
+.    "expires_at": "2024-04-11T15:23:49.451Z",
+    "test": true,
+    "paid": true,
+    "refundable": false,
+    "metadata": {
+	        
+    },
+    "authorization_details": {
+"        "rrn": "756120250018407",
+        "auth_code": "424903",
+        "three_d_secure": {
+            "applied": false,
+'            "method_completed": false,
+)            "challenge_completed": false
+
+        }
+    }
+}
+^Request URI:	https://api.yookassa.ru/v3/payments/2d9c9457-000f-5000-a000-1ea13968ba7c/capture
+?Headers:		Idempotence-Key=84e01c0f-b8ba-456a-a678-6af873038dc1
+e				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+				Accept=*/*
+"				Content-Type=application/json
+Body:
+{
+    "amount": null
+}
+HTTP/1.1 200 
+Server: nginx
+$Date: Thu, 04 Apr 2024 15:23:50 GMT
+-Content-Type: application/json;charset=UTF-8
+Content-Length: 1208
+Connection: keep-alive
+Keep-Alive: timeout=12
+�Signature: v1 2da0d9c6 1 MGQCMGQBTKYwBOsKRc0YR9NdMhfpgwHs1SUCFDlDx7pI/Aje9+gTKyTThrCsv1WFfqjEAgIwPxCawY4GokbrY38YPhe1aB4rZRCCILdXWRM4mbtEUi2R6p0hszRCUAHlca0ZVtQK
+,Strict-Transport-Security: max-age=15768000
+
+{
+2    "id": "2d9c9457-000f-5000-a000-1ea13968ba7c",
+    "status": "succeeded",
+    "amount": {
+        "value": "150.00",
+        "currency": "RUB"
+    },
+    "income_amount": {
+        "value": "144.75",
+        "currency": "RUB"
+    },
+'    "description": "Заказ №74",
+    "recipient": {
+         "account_id": "359240",
+         "gateway_id": "2215148"
+    },
+    "payment_method": {
+        "type": "bank_card",
+6        "id": "2d9c9457-000f-5000-a000-1ea13968ba7c",
+        "saved": false,
+$        "title": "Bank card *4444",
+        "card": {
+             "first6": "555555",
+            "last4": "4444",
+#            "expiry_year": "2020",
+"            "expiry_month": "01",
+'            "card_type": "MasterCard",
+            "card_product": {
+                "code": "E"
+            },
+#            "issuer_country": "US"
+
+        }
+    },
+/    "captured_at": "2024-04-01T09:39:16.724Z",
+.    "created_at": "2024-04-01T09:38:31.688Z",
+    "test": true,
+    "refunded_amount": {
+        "value": "0.00",
+        "currency": "RUB"
+    },
+    "paid": true,
+    "refundable": true,
+    "metadata": {
+	        
+    },
+    "authorization_details": {
+"        "rrn": "200034122782729",
+        "auth_code": "668050",
+        "three_d_secure": {
+            "applied": false,
+'            "method_completed": false,
+)            "challenge_completed": false
+
+        }
+    }
+}
+^Request URI:	https://api.yookassa.ru/v3/payments/2d9c9457-000f-5000-a000-1ea13968ba7c/capture
+?Headers:		Idempotence-Key=84e01c0f-b8ba-456a-a678-6af873038dc1
+e				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+				Accept=*/*
+"				Content-Type=application/json
+Body:
+{
+    "amount": null
+}
+HTTP/1.1 200 
+Server: nginx
+$Date: Thu, 04 Apr 2024 15:23:50 GMT
+-Content-Type: application/json;charset=UTF-8
+Content-Length: 1208
+Connection: keep-alive
+Keep-Alive: timeout=12
+�Signature: v1 2da0d9c6 1 MGUCMC2dgiAXx2YPm2HgCJ1IoVRxcpjhsRsCmM6ypd1QTZEsQl23AR1idxNwmuS4zQtcPgIxAIuOoFuOCeQZiuJMk1fe+vwCYgNe86ONrugOiAAiTYEQAAkN+N8CI3bK6PmzBeT//w==
+,Strict-Transport-Security: max-age=15768000
+
+{
+2    "id": "2d9c9457-000f-5000-a000-1ea13968ba7c",
+    "status": "succeeded",
+    "amount": {
+        "value": "150.00",
+        "currency": "RUB"
+    },
+    "income_amount": {
+        "value": "144.75",
+        "currency": "RUB"
+    },
+'    "description": "Заказ №74",
+    "recipient": {
+         "account_id": "359240",
+         "gateway_id": "2215148"
+    },
+    "payment_method": {
+        "type": "bank_card",
+6        "id": "2d9c9457-000f-5000-a000-1ea13968ba7c",
+        "saved": false,
+$        "title": "Bank card *4444",
+        "card": {
+             "first6": "555555",
+            "last4": "4444",
+#            "expiry_year": "2020",
+"            "expiry_month": "01",
+'            "card_type": "MasterCard",
+            "card_product": {
+                "code": "E"
+            },
+#            "issuer_country": "US"
+
+        }
+    },
+/    "captured_at": "2024-04-01T09:39:16.724Z",
+.    "created_at": "2024-04-01T09:38:31.688Z",
+    "test": true,
+    "refunded_amount": {
+        "value": "0.00",
+        "currency": "RUB"
+    },
+    "paid": true,
+    "refundable": true,
+    "metadata": {
+	        
+    },
+    "authorization_details": {
+"        "rrn": "200034122782729",
+        "auth_code": "668050",
+        "three_d_secure": {
+            "applied": false,
+'            "method_completed": false,
+)            "challenge_completed": false
+
+        }
+    }
+}
+]Request URI:	https://api.yookassa.ru/v3/payments/2d9c96c5-000f-5000-a000-1b3bd0a22a74/cancel
+?Headers:		Idempotence-Key=84e01c0f-b8ba-456a-a678-6af873038dc1
+e				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+				Accept=*/*
+"				Content-Type=application/json
+Body:			<none>
+HTTP/1.1 200 
+Server: nginx
+$Date: Thu, 04 Apr 2024 15:23:50 GMT
+-Content-Type: application/json;charset=UTF-8
+Content-Length: 1113
+Connection: keep-alive
+Keep-Alive: timeout=12
+�Signature: v1 2da0d9c6 1 MGQCMClkOdZ6wjO+Jf0rp1NOqkv7P8ltghKGxiVmbBbdlFf5Qrm2yVZVodHldPvJml6KEAIwcJRoxvY6DsVocAXVBZ187eKQv3urdFC32CiSJVLkwpx89cjkTVD9PEpm0btCV/HO
+,Strict-Transport-Security: max-age=15768000
+
+{
+2    "id": "2d9c96c5-000f-5000-a000-1b3bd0a22a74",
+    "status": "canceled",
+    "amount": {
+        "value": "150.00",
+        "currency": "RUB"
+    },
+'    "description": "Заказ №74",
+    "recipient": {
+         "account_id": "359240",
+         "gateway_id": "2215148"
+    },
+    "payment_method": {
+        "type": "bank_card",
+6        "id": "2d9c96c5-000f-5000-a000-1b3bd0a22a74",
+        "saved": false,
+$        "title": "Bank card *4444",
+        "card": {
+             "first6": "555555",
+            "last4": "4444",
+#            "expiry_year": "2020",
+"            "expiry_month": "01",
+'            "card_type": "MasterCard",
+            "card_product": {
+                "code": "E"
+            },
+#            "issuer_country": "US"
+
+        }
+    },
+.    "created_at": "2024-04-01T09:48:53.457Z",
+    "test": true,
+    "paid": false,
+    "refundable": false,
+    "metadata": {
+	        
+    },
+    "cancellation_details": {
+        "party": "merchant",
+)        "reason": "canceled_by_merchant"
+    },
+    "authorization_details": {
+"        "rrn": "867465446368614",
+        "auth_code": "838509",
+        "three_d_secure": {
+            "applied": false,
+'            "method_completed": false,
+)            "challenge_completed": false
+
+        }
+    }
+}
