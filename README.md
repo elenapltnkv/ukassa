@@ -104,6 +104,10 @@ gradle clean test
 ```bash
 gradle clean smoke
 ```
+### :earth_asia: Запуск позитивных тестов
+```bash
+gradle clean positive
+```
 
 ## Примеры использования
 

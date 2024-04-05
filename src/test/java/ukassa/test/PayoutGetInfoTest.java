@@ -29,7 +29,7 @@ public class PayoutGetInfoTest extends Base {
 
     }
 
-    @Feature("Запрс информации по платежам")
+    @Feature("Запрос информации по платежам")
     @Owner("samigullaeva.ea")
     @DisplayName("Проверка запроса информации по определенному платежу")
     @Test

@@ -17,7 +17,7 @@ import static ukassa.spec.Specifications.spec;
 public class PayoutSuccessApprovePostPositiveTest extends Base {
     @Feature("Позитивные тесты")
     @Owner("samigullaeva.ea")
-    @DisplayName("Проверка успешного подтверждения платежаб статус код 200")
+    @DisplayName("Проверка успешного подтверждения платежа получение статус кода 200")
     @Test
     public void PayoutSuccessAproveTest() {
         String payment_id = "2d9c9457-000f-5000-a000-1ea13968ba7c";
@@ -40,7 +40,7 @@ public class PayoutSuccessApprovePostPositiveTest extends Base {
 
     @Feature("Позитивные тесты")
     @Owner("samigullaeva.ea")
-    @DisplayName("Проверка успешного подтверждения платежаб статус 'succeeded'")
+    @DisplayName("Проверка успешного подтверждения платежа получение статуса 'succeeded'")
     @Test
     public void PayoutSuccessAproveStatusTest() {
         String payment_id = "2d9c9457-000f-5000-a000-1ea13968ba7c";
