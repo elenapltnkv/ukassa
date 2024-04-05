@@ -122,27 +122,35 @@ gradle clean positive
 значок *Allure Report* кликнув по которому, откроется страница с сформированным html-отчетом и тестовой документацией.
 
 ## <img width="4%" title="Allure Report" src="images/logo/Allure.svg"> Отчет о результатах тестирования в [Allure Report](http://45.9.40.101:8888/job/wb/179/allure/)
-
 <p align="center">
-  <img src="images/screenshots/2024-03-21_11-58.png" alt="allure-report" width="900">
+  <img src="images/screenshots/jenkinsParam.png" alt="allure-report" width="900">
+</p>
+<p align="center">
+  <img src="images/screenshots/jenkinsBild.png" alt="allure-report" width="900">
 </p>
 
 <p align="center">
-  <img src="images/screenshots/2024-03-21_11-59.png" alt="allure-report_1" width="900">
+  <img src="images/screenshots/jeninsTestPass.png" alt="allure-report_1" width="900">
 </p>
 
-### Основной дашборд
+### Основной дашборд Allure
 
 <p align="center">
-  <img src="images/screenshots/2024-03-21_11-59_1.png" alt="dashboard" width="900">
+  <img src="images/screenshots/allureMainDashbord.png" alt="dashboard" width="900">
 </p>
 <p align="center">
-  <img src="images/screenshots/fullScreen.png" alt="dashboard" width="900">
+  <img src="images/screenshots/allureTestDashbord.png" alt="dashboard" width="900">
 </p>
 
-## <img width="4%" title="Telegram" src="images/logo/Telegram.svg"> Уведомления в Telegram
+## <img width="4%" title="Telegram" src="images/logo/Telegram.svg"> Уведомление в Telegram
 После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне тестов.
 
 <p align="center">
-<img title="Telegram Notifications" src="images/screenshots/2024-03-21_12-01.png">
+<img title="Telegram Notifications" src="images/screenshots/telegaReport.png">
 
+<a id="video"></a>
+## <img src="images/logo/GitHub.svg" width="25" height="25"/></a> Пример прогона теста в Github
+
+<p align="center">
+  <img title="Selenoid Video" src="images/screenshots/Peek 2024-04-05 08-11.gif">
+</p>
