@@ -121,7 +121,6 @@ gradle clean positive
 После выполнения сборки, в блоке <code><strong>*История сборок*</strong></code> напротив номера сборки появится
 значок *Allure Report* кликнув по которому, откроется страница с сформированным html-отчетом и тестовой документацией.
 
-## <img width="4%" title="Allure Report" src="images/logo/Allure.svg"> Отчет о результатах тестирования в [Allure Report](http://45.9.40.101:8888/job/wb/179/allure/)
 <p align="center">
   <img src="images/screenshots/jenkinsParam.png" alt="allure-report" width="900">
 </p>
@@ -133,7 +132,7 @@ gradle clean positive
   <img src="images/screenshots/jeninsTestPass.png" alt="allure-report_1" width="900">
 </p>
 
-### Основной дашборд Allure
+## <img width="4%" title="Allure Report" src="images/logo/Allure.svg"> Отчет о результатах тестирования в [Allure Report](http://45.9.40.101:8888/job/wb/179/allure/)
 
 <p align="center">
   <img src="images/screenshots/allureMainDashbord.png" alt="dashboard" width="900">
@@ -149,7 +148,7 @@ gradle clean positive
 <img title="Telegram Notifications" src="images/screenshots/telegaReport.png">
 
 <a id="video"></a>
-## <img src="images/logo/GitHub.svg" width="25" height="25"/></a> Пример прогона теста в Github
+## <img src="images/logo/GitHub.svg" width="25" height="25"/></a> Пример прогона тестов в Github
 
 <p align="center">
   <img title="Selenoid Video" src="images/screenshots/Peek 2024-04-05 08-11.gif">
